@@ -75,7 +75,7 @@ const scssStyles = () => {
 };
 
 const fonts = () => {
-	return src('./src/fonts/fonts.css').pipe(dest('dist/src/fonts'));
+	return src('./src/fonts/**').pipe(dest('dist/src/fonts'));
 };
 
 const cssStyles = () => {
@@ -91,6 +91,7 @@ const watchFiles = () => {
 };
 
 watch(['./*.html'], html);
+watch(['./src/fonts/**'], fonts);
 watch('./templates/*.html', html);
 watch('./src/scss/**/*.scss', scssStyles);
 watch('./src/js/**', files);

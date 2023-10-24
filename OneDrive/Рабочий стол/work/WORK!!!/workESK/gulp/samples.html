@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+
+		<title>Document</title>
+	</head>
+	<body class="test">
+		@@include('./templates/header.html')
+		<!-- кнопка детального просмотра -->
+		<button class="increase-btn">
+			<img
+				src="./src/images/svg/loupe.svg"
+				alt="" />
+		</button>
+
+		<!-- кнопка "подробнее" -->
+		<button class="details-btn">
+			<div class="details-btn__box">
+				<div class="details-btn__icon">
+					<img
+						src="src/images/svg/arrow-top.svg"
+						alt="" />
+				</div>
+
+				<span class="details-btn__text">Подробнее</span>
+			</div>
+		</button>
+
+		<!-- кнопка "все усгули" -->
+		<a
+			class="link-btn"
+			href="#">
+			<span class="link-btn__text">Все услуги</span>
+			<div class="link-btn__icon">
+				<img
+					src="src/images/svg/arrow-top.svg"
+					alt="" />
+			</div>
+		</a>
+
+		<!-- кнопка "оставить заявку" -->
+		<button class="request-btn">
+			<div class="request-btn__box">
+				<span class="request-btn__text">Оставить заявку</span>
+			</div>
+			<span class="request-btn__icon">
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<g id="Icons">
+						<path
+							id="Vector"
+							d="M3.01075 16.4138C3.17792 17.6841 3.80179 18.8501 4.76584 19.6941C5.7299 20.5381 6.96821 21.0023 8.2495 21C15.6933 21 21.7495 14.9438 21.7495 7.5C21.7518 6.21871 21.2876 4.9804 20.4436 4.01634C19.5996 3.05228 18.4336 2.42841 17.1633 2.26125C16.842 2.22203 16.5167 2.28775 16.2359 2.4486C15.9551 2.60945 15.7338 2.85681 15.6051 3.15375L13.6251 7.57406V7.58531C13.5266 7.81261 13.4859 8.06078 13.5067 8.30764C13.5275 8.55449 13.6091 8.79237 13.7442 9C13.7611 9.02531 13.7789 9.04875 13.7976 9.07219L15.7495 11.3859C15.0473 12.8128 13.5548 14.2922 12.1092 14.9963L9.82732 13.0547C9.80491 13.0359 9.78143 13.0183 9.757 13.0022C9.54954 12.8638 9.31085 12.7794 9.06253 12.7564C8.81421 12.7335 8.5641 12.7729 8.33482 12.8709L8.32263 12.8766L3.90606 14.8556C3.6086 14.9838 3.36064 15.2049 3.19925 15.4858C3.03787 15.7666 2.97174 16.0922 3.01075 16.4138Z"
+							fill="#343333" />
+					</g>
+				</svg>
+			</span>
+		</button>
+
+		<button class="request-btn request-btn--dark">
+			<div class="request-btn__box">
+				<span class="request-btn__text">Оставить заявку</span>
+			</div>
+			<span class="request-btn__icon">
+				<svg
+					width="32"
+					height="32"
+					viewBox="0 0 32 32"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10.6666 22L22 10.6667M22 10.6667V20M22 10.6667H12.6666"
+						stroke="#343333"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</span>
+		</button>
+
+		<!-- лого -->
+		<a
+			class="logo"
+			href="#">
+			<img
+				src="./src/images/svg/logo.svg"
+				alt="" />
+		</a>
+
+		<!-- классы для текста -->
+		<p class="title1">
+			title1: The quick brown fox jumps over the lazy dog.
+			<br />
+		</p>
+		<p class="title2">
+			title2: The quick brown fox jumps over the lazy dog.
+			<br />
+		</p>
+		<p class="title3">
+			title3: The quick brown fox jumps over the lazy dog.
+			<br />
+		</p>
+
+		<p class="text1">
+			text 20 medium: The quick brown fox jumps over the lazy dog.
+		</p>
+		<p class="text2">
+			text 20 bold: The quick brown fox jumps over the lazy dog.
+		</p>
+		<p class="text3">
+			text 20 akzidenz: The quick brown fox jumps over the lazy dog.
+		</p>
+		<p class="text4">
+			small text: The quick brown fox jumps over the lazy dog.
+		</p>
+		<p class="text5">numbers: The quick brown fox jumps over the lazy dog.</p>
+	</body>
+</html>
