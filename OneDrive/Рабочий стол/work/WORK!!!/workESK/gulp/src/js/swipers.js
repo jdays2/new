@@ -18,3 +18,21 @@
 //     el: '.swiper-scrollbar',
 //   },
 // });
+
+const heroSwiper = new Swiper('.main-hero-swiper', {
+	slidesPerView: 1,
+	slidesPerGroup: 1,
+  speed: 800,
+	autoplay: {
+		delay: 5000,
+	},
+  pagination: {
+    el: ".hero__swiper-fraction",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".hero__swiper-navigation-arrow.next",
+    prevEl: ".hero__swiper-navigation-arrow.prev",
+  },
+
+});
