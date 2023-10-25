@@ -2,6 +2,13 @@
 	display: flex;
 	align-items: center;
 	width: 100%;
+
+	&--dark {
+		.nav__links-item {
+			color: $black;
+		}
+	}
+
 	&__links {
 		display: flex;
 		align-items: center;

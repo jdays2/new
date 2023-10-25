@@ -12,6 +12,12 @@
 			rel="stylesheet"
 			href="./src/css/main.css" />
 
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 		<title>Document</title>
 	</head>
 	<body class="test">
@@ -22,6 +28,26 @@
 				src="./src/images/svg/loupe.svg"
 				alt="" />
 		</button>
+
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				...
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
 
 		<!-- кнопка "подробнее" -->
 		<button class="details-btn">
@@ -120,9 +146,7 @@
 		<p class="text2">
 			text 20 bold: The quick brown fox jumps over the lazy dog.
 		</p>
-		<p class="text3">
-			text3: info@esccom.ru
-		</p>
+		<p class="text3">text3: info@esccom.ru</p>
 		<p class="text4">
 			small text: The quick brown fox jumps over the lazy dog.
 		</p>
