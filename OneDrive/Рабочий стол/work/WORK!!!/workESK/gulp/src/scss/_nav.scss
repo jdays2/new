@@ -15,4 +15,31 @@
 			}
 		}
 	}
+
+	@media (max-width: 48em) {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+
+		&__links {
+			display: none;
+			&-item--email {
+				display: none;
+			}
+		}
+
+		.request-btn {
+			&__box {
+				display: none;
+			}
+			&__icon {
+				background-color: $white;
+				svg {
+					path {
+						fill: $black;
+					}
+				}
+			}
+		}
+	}
 }

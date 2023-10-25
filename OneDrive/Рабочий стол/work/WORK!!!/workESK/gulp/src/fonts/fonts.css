@@ -11,9 +11,7 @@
 	font-family: 'Akzidenz';
 	font-style: normal;
 	font-weight: 500;
-	src: url('./akzidenzgroteskpro-md.woff2') format('woff2'),
-		url('./akzidenzgroteskpro-md.woff') format('woff'),
-		url('./akzidenzgroteskpro-md.ttf') format('truetype');
+	src: url('./akzidenzgroteskpro_mdex.ttf') format('truetype');
 }
 
 @font-face {
