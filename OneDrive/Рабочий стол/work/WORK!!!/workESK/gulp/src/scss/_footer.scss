@@ -9,7 +9,7 @@
 		width: 100%;
 		padding: 3.5rem;
 		margin-top: 3.6rem;
-		border-top: 1px solid $gray;
+		@include border(top)
 	}
 
 	&__info-box {

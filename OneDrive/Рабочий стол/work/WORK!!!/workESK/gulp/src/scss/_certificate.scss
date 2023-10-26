@@ -1,0 +1,43 @@
+.certificate {
+	&__box {
+		width: 32rem;
+		margin: 0 auto;
+	}
+
+	&__item {
+		padding: 4rem;
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+		@include border(right);
+    
+
+		&-img {
+			height: 41.4rem;
+      position: relative;
+      .increase-btn {
+        position: absolute;
+        bottom: 1.6rem;
+        right: 1.6rem;
+      }
+		}
+
+		&-description {
+			display: flex;
+			flex-direction: column;
+			gap: 0.2rem;
+			padding: 1.6rem;
+			border: 1px solid $black;
+
+			p {
+				text-overflow: ellipsis;
+				text-wrap: nowrap;
+			}
+
+			p {
+				text-overflow: ellipsis;
+				text-wrap: nowrap;
+			}
+		}
+	}
+}

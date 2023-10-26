@@ -1,9 +1,11 @@
 .services {
-	border-bottom: 1px solid $gray;
+	@include border(bottom);
 	&__tabs {
 		width: 100%;
 		margin-bottom: 5.7rem;
 		background-color: $yellow;
+    @include border(top);
+    @include border(bottom);
 
 		&-list {
 			width: 160rem;
@@ -33,7 +35,7 @@
 	&__box {
 		width: 160rem;
 		margin: 0 auto;
-		
+
 		justify-content: space-between;
 		align-items: center;
 		padding-bottom: 4rem;
@@ -108,6 +110,68 @@
 			position: absolute;
 			top: 35rem;
 			right: -2.2rem;
+		}
+	}
+
+	@media (max-width: 48em) {
+		&__box {
+			flex-direction: column-reverse;
+			width: 34.3rem * 2;
+			margin: 0 auto;
+			padding: 0;
+			padding-bottom: 4.8rem;
+			gap: 6.4rem;
+		}
+
+		&__circle-block {
+			width: 26.1rem * 2;
+			height: 26.1rem * 2;
+      .details-btn {
+        top: 0;
+        right: -4.2rem;
+      }
+			&:last-child {
+				background-color: transparent;
+				border-radius: 0;
+				width: 100%;
+				height: -webkit-fit-content;
+				height: -moz-fit-content;
+				height: fit-content;
+
+				.services__circle-block-box {
+					width: 100%;
+					gap: 3.2rem;
+					height: -webkit-fit-content;
+					height: -moz-fit-content;
+					height: fit-content;
+				}
+				.services__info-elem {
+					display: none;
+				}
+			}
+		}
+		&__tabs {
+			margin-bottom: 4.8rem;
+			&-item {
+				padding: 1.6rem 4rem;
+				border-radius: 6rem;
+			}
+			&-list {
+				gap: 0;
+				padding-left: 3.2rem;
+				padding-top: 4rem;
+				padding-bottom: 4rem;
+				width: 100%;
+				overflow: auto;
+
+				&::-webkit-scrollbar {
+					width: 0;
+				}
+
+				&::-webkit-scrollbar {
+					height: 0;
+				}
+			}
 		}
 	}
 }
