@@ -1,15 +1,16 @@
 //селект, выбор одного активного элемета с присвоением класса 'active'
 const selectWrappers = document.querySelectorAll('.select-block');
+console.log(selectWrappers)
 
-const selection = (block, item) => {
+const selection = (items, item) => {
 	const activeClass = 'active';
 
-	block.forEach((children) => {
-		if (children.classList.contains(activeClass)) {
-			children.classList.remove(activeClass);
+	items.forEach((e) => {
+		if (e.classList.contains(activeClass)) {
+			e.classList.remove(activeClass);
 		}
-		if (children === item) {
-			children.classList.add(activeClass);
+		if (e === item) {
+			e.classList.add(activeClass);
 		}
 	});
 };
@@ -20,7 +21,7 @@ if (selectWrappers) {
 
 		selectItems.forEach((item) => {
 			item.addEventListener('click', () => {
-				selection(block, item);
+				selection(selectItems, item);
 			});
 		});
 	});
