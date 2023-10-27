@@ -1,0 +1,131 @@
+.certificate-modal {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0;
+
+	&__arrows {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.modal__close {
+		top: 6rem;
+		right: 4rem;
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		height: 100%;
+		width: 100vw;
+
+		.certificate-modal-swiper {
+			width: 49.6rem;
+			height: 72rem;
+
+			&__card {
+				width: 100%;
+				height: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					-o-object-fit: cover;
+					object-fit: cover;
+				}
+			}
+
+			&__arrow {
+				width: 2.4rem;
+				height: 2.4rem;
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+
+				img {
+					width: 100%;
+					height: 100%;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+
+				&.next {
+					right: 4rem;
+
+					img {
+						transform: rotate(-180deg);
+					}
+				}
+
+				&.prev {
+					left: 4rem;
+				}
+			}
+		}
+
+		.certificate-modal-swiper-thumbs {
+			width: 49.6rem;
+			.swiper-slide-thumb-active.certificate-modal-swiper__card::after {
+				display: none !important;
+			}
+			.certificate-modal-swiper__card {
+				width: 6.4rem;
+				height: 9rem;
+				position: relative;
+
+				&::after {
+					content: '';
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					background-color: rgba(52, 51, 51, 0.5);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	@media (max-width: 48em) {
+		.modal__close {
+			width: 4.4rem;
+			height: 4.4rem;
+			top: 8rem;
+			right: 3.6rem;
+		}
+
+		.modal__content {
+			height: 100%;
+		}
+
+		.certificate-modal-swiper-thumbs {
+			display: none;
+		}
+
+		.certificate-modal-swiper {
+			width: 34.3rem * 2;
+			height: 49.8rem * 2;
+		}
+		.certificate-modal__arrows {
+			width: 34.3rem * 2;
+      margin-top: 4rem;
+		}
+		.certificate-modal-swiper__arrow {
+			&.next,
+			&.prev {
+				position: static;
+				width: 4.4rem;
+				height: 4.4rem;
+			}
+		}
+	}
+}

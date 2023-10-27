@@ -1,38 +1,92 @@
-// const swiper = new Swiper('.swiper', {
-//   // Optional parameters
-//   loop: true,
-
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
+// Пересчет rem в px
+const rem = function (rem) {
+	if (window.innerWidth > 768) {
+		return 0.005208335 * window.innerWidth * rem;
+	} else {
+		// где 375 это ширина моб версии макета
+		return (100 / 375) * (0.1 * window.innerWidth) * rem;
+	}
+};
 
 const heroSwiper = new Swiper('.main-hero-swiper', {
 	slidesPerView: 1,
 	slidesPerGroup: 1,
-  speed: 800,
+	speed: 800,
 	autoplay: {
 		delay: 5000,
 	},
-  pagination: {
-    el: ".hero__swiper-fraction",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".hero__swiper-navigation-arrow.next",
-    prevEl: ".hero__swiper-navigation-arrow.prev",
-  },
+	pagination: {
+		el: '.hero__swiper-fraction',
+		type: 'fraction',
+	},
+	navigation: {
+		nextEl: '.hero__swiper-navigation-arrow.next',
+		prevEl: '.hero__swiper-navigation-arrow.prev',
+	},
+});
 
+const certificateSwiper = new Swiper('.certificate__swiper', {
+	speed: 800,
+	navigation: {
+		nextEl: '.certificate__pagination-arrow.next',
+		prevEl: '.certificate__pagination-arrow.prev',
+	},
+	breakpoints: {
+		769: {
+			slidesPerView: 4,
+			slidesPerGroup: 1,
+		},
+		320: {
+			slidesPerView: 1.3,
+			slidesPerGroup: 1,
+		},
+	},
+});
+
+const certificateModalSwiperThumbs = new Swiper(
+	'.certificate-modal-swiper-thumbs',
+	{
+		speed: 800,
+		slidesPerView: 'auto',
+		spaceBetween: rem(0.8),
+	},
+);
+
+const certificateModalSwiperMain = new Swiper('.certificate-modal-swiper', {
+	speed: 800,
+	slidesPerView: 1,
+	spaceBetween: rem(2),
+	navigation: {
+		nextEl: '.certificate-modal-swiper__arrow.next',
+		prevEl: '.certificate-modal-swiper__arrow.prev',
+	},
+
+	thumbs: {
+		swiper: certificateModalSwiperThumbs,
+	},
+});
+
+const swiperPartners = new Swiper('.swiper-partners', {
+	slidesPerView: 8,
+  speed: 10000,
+	spaceBetween: rem(3.6),
+  loop: true,
+  allowTouchMove: false, // можно ещё отключить свайп
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+  }
+});
+
+const swiperPartners2 = new Swiper('.swiper-partners2', {
+	slidesPerView: 8,
+  speed: 10000,
+	spaceBetween: rem(3.6),
+  loop: true,
+  allowTouchMove: false, // можно ещё отключить свайп
+  autoplay: {
+    delay: 0,
+		reverseDirection: true,
+    disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+  }
 });

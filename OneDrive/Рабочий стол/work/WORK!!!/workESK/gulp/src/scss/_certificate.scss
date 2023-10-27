@@ -1,25 +1,79 @@
 .certificate {
 	&__box {
-		width: 32rem;
+		width: 100%;
+		@include border(top);
+		@include border(bottom);
+		position: relative;
+		&::after {
+			height: 100%;
+			content: '';
+			width: 10rem;
+			position: absolute;
+			right: 7rem;
+			top: 0;
+			background-color: #f5f6f7;
+			z-index: 10;
+		}
+	}
+
+	.swiper-pagination {
+		position: static;
+	}
+
+	&__pagination {
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+
+		&--mobile {
+			display: none;
+		}
+	}
+
+	&__pagination-arrow {
+		cursor: pointer;
+		width: 4rem;
+		height: 4rem;
+		&.swiper-button-disabled {
+			opacity: 0.5;
+			cursor: default;
+		}
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__swiper {
+		width: 164rem;
 		margin: 0 auto;
+		overflow: hidden;
 	}
 
 	&__item {
 		padding: 4rem;
-		display: flex;
+		display: flex !important;
 		flex-direction: column;
 		gap: 3.2rem;
 		@include border(right);
-    
+
+		.increase-btn {
+			position: absolute;
+			top: 38.2rem;
+			right: 5.6rem;
+		}
 
 		&-img {
 			height: 41.4rem;
-      position: relative;
-      .increase-btn {
-        position: absolute;
-        bottom: 1.6rem;
-        right: 1.6rem;
-      }
+			position: relative;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+			}
 		}
 
 		&-description {
@@ -28,15 +82,71 @@
 			gap: 0.2rem;
 			padding: 1.6rem;
 			border: 1px solid $black;
+			background-color: $white;
 
 			p {
-				text-overflow: ellipsis;
-				text-wrap: nowrap;
+				@include text-hide;
 			}
 
 			p {
-				text-overflow: ellipsis;
-				text-wrap: nowrap;
+				@include text-hide;
+			}
+		}
+	}
+
+	@media (max-width: 48em) {
+		&__swiper {
+			width: 100%;
+		}
+
+		.section__head {
+			gap: 0;
+		}
+
+		&__pagination-arrow {
+			width: 4.4rem;
+			height: 4.4rem;
+		}
+
+		.section__arrows {
+			display: none;
+			margin-left: 3.2rem;
+			margin-top: 4.8rem;
+			&--mobile {
+				display: flex;
+			}
+
+			.certificate__pagination {
+				display: flex;
+				gap: 3.8rem;
+			}
+		}
+
+		&__box {
+			&::after {
+				display: none;
+			}
+		}
+
+		&__item {
+			padding-top: 4.8rem;
+			padding-bottom: 4.8rem;
+			padding-left: 3.2rem;
+			border-right: none;
+			padding-right: 0;
+
+			.increase-btn {
+				position: absolute;
+				top: 27rem * 2;
+				right: 4rem;
+			}
+
+			&-description {
+				padding: 3.4rem 4rem;
+			}
+
+			&-img {
+				height: 30.6rem * 2;
 			}
 		}
 	}

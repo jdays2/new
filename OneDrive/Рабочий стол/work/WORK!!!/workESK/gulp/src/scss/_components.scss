@@ -2,7 +2,14 @@ $yellow: rgba(255, 217, 83, 1);
 $black: #343333;
 $light-gray: #f3f4f5;
 $gray: #a9a9a9;
+$red: #F63D37;
 $white: rgba(255, 255, 255, 1);
+
+@mixin text-hide {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-wrap: nowrap;
+}
 
 @mixin white-bg-yellow {
 	background-color: $white;
@@ -412,6 +419,7 @@ $white: rgba(255, 255, 255, 1);
 		&-discription {
 			width: 74rem;
 		}
+
 		@media (max-width: 48em) {
 			margin-left: 3.2rem;
 			margin-bottom: 6.4rem;
