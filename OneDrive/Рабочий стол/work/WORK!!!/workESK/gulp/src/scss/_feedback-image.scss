@@ -1,0 +1,16 @@
+.feedback-image {
+  
+	.modal__content {
+		position: static;
+	}
+	&__img {
+		height: 72rem;
+
+		img {
+			height: 100%;
+			position: relative;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+	}
+}

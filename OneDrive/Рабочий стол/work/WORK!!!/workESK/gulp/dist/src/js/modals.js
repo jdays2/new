@@ -34,3 +34,15 @@ if (sertificateBtns) {
 		});
 	});
 }
+
+const feedbackImageBtn = document.querySelectorAll('.feedback__btn');
+const feedbackImageModal = document.querySelector('.feedback-image');
+
+if (feedbackImageBtn) {
+	const activeClass = 'active';
+	feedbackImageBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			feedbackImageModal.classList.add(activeClass);
+		});
+	});
+}

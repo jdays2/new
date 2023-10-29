@@ -11,13 +11,13 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+		<script
+			src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
+			type="text/javascript"></script>
 		<title>ESK | Главная</title>
 	</head>
 	<body>
@@ -1394,7 +1394,7 @@
 										src="./src/images/webp/feedback.webp"
 										alt="" />
 
-									<button class="increase-btn">
+									<button class="increase-btn feedback__btn">
 										<img
 											src="./src/images/svg/loupe.svg"
 											alt="" />
@@ -1446,7 +1446,7 @@
 										src="./src/images/webp/feedback.webp"
 										alt="" />
 
-									<button class="increase-btn">
+									<button class="increase-btn feedback__btn">
 										<img
 											src="./src/images/svg/loupe.svg"
 											alt="" />
@@ -1498,7 +1498,7 @@
 										src="./src/images/webp/feedback.webp"
 										alt="" />
 
-									<button class="increase-btn">
+									<button class="increase-btn feedback__btn">
 										<img
 											src="./src/images/svg/loupe.svg"
 											alt="" />
@@ -1612,7 +1612,11 @@
 				</div>
 
 				<div class="contacts__box">
-					<div class="contacts__left-side"></div>
+					<div class="contacts__left-side">
+						<div
+							class="map"
+							id="map"></div>
+					</div>
 					<div class="contacts__right-side">
 						<form class="form">
 							<div class="form__head">
@@ -2051,10 +2055,29 @@
 	</div>
 </div>
 
+<!-- отзыв(файл подробнее) -->
+<div class="modal feedback-image">
+	<div class="modal__content modal__content--transparent">
+		<div class="feedback-image__box">
+			<div class="feedback-image__img">
+				<button class="modal__close">
+					<img
+						src="./src/images/svg/close-btn-light.svg"
+						alt="" />
+				</button>
+				<img
+					src="./src/images/webp/feedback.webp"
+					alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+
 <script src="./src/js/burger.js"></script>
 <script src="./src/js/select-tab.js"></script>
 <script src="./src/js/swipers.js"></script>
 <script src="./src/js/modals.js"></script>
 <script src="./src/js/form.js"></script>
+<script src="./src/js/map.js"></script>
 
 </html>
