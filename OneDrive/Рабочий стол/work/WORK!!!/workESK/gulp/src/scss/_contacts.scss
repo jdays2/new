@@ -1,0 +1,19 @@
+.contacts {
+	&__box {
+		@include border(top);
+		@include border(bottom);
+		height: 62.5rem;
+    display: flex
+	}
+
+	&__left-side {
+    @include border(right);
+		width: 50%;
+		height: 100%;
+	}
+
+	&__right-side {
+    width: 50%;
+    padding: 8rem 6rem;
+	}
+}

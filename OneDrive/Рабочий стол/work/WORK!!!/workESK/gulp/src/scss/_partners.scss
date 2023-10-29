@@ -19,7 +19,6 @@
 		width: -moz-fit-content;
 		width: fit-content;
 		display: flex;
-		gap: 6.4rem;
 		align-items: center;
 		-webkit-animation: partners-move 5s linear infinite;
 		animation: partners-move 5s linear infinite;
@@ -38,9 +37,28 @@
 	}
 
 	&__row {
-		width: 192rem;
+		width: 100%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
+	}
+
+	@media (max-width: 48em) {
+		&__row {
+			width: 100%;
+		}
+
+		&__box {
+			gap: 2.4rem;
+		}
+
+		&__list {
+			-webkit-animation: partners-move 4s linear infinite;
+			animation: partners-move 4s linear infinite;
+
+			&-item {
+				height: 11.4rem * 2 !important;
+			}
+		}
 	}
 }
