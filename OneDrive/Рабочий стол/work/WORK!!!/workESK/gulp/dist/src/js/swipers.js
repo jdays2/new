@@ -67,15 +67,15 @@ const certificateModalSwiperMain = new Swiper('.certificate-modal-swiper', {
 });
 
 const swiperPartners = new Swiper('.swiper-partners', {
-	speed: 10000,
-	spaceBetween: rem(6.4),
-	loop: true,
+	speed: 10000, //задаем скорость движения нашей бегущей строки
+	spaceBetween: rem(6.4), // задаем отступы
+	loop: true, //зацикливаем, что бы движание было бесконечным
 	allowTouchMove: false, // можно ещё отключить свайп
-	autoplay: {
-		delay: 0,
-		disableOnInteraction: false, // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+	autoplay: { //задаем автоплей по умолчанию с нулевой задержкой
+ 		delay: 0,
+		disableOnInteraction: false, // отключаем возможность отлючить анимацию при касании
 	},
-	breakpoints: {
+	breakpoints: { //стандартные настройки, котрые не так важны
 		769: {
 			slidesPerView: 7,
 		},
