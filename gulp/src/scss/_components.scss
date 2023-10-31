@@ -389,12 +389,13 @@ $white: rgba(255, 255, 255, 1);
 .section {
 	padding-bottom: 16rem;
 	overflow: hidden;
+	position: relative;
 
 	&__head {
 		align-items: flex-start;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
 		width: 160rem;
 		margin: 0 auto;
 		margin-bottom: 3.9rem;
@@ -418,6 +419,11 @@ $white: rgba(255, 255, 255, 1);
 		}
 		&-discription {
 			width: 74rem;
+
+			strong {
+				display: block;
+				font-weight: 700;
+			}
 		}
 
 		@media (max-width: 48em) {
@@ -449,8 +455,13 @@ $white: rgba(255, 255, 255, 1);
 	}
 	@media (max-width: 48em) {
 		padding-bottom: 20rem;
+		
 		&__head {
 			width: 100%;
+			&-discription {
+				width: 34.3rem*2;
+				
+			}
 		}
 		&__arrows {
 			display: none;

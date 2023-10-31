@@ -206,6 +206,114 @@
 		}
 	}
 
+	@-webkit-keyframes rotate {
+		from {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes rotate {
+		from {
+			transform: rotate(-360deg);
+		}
+	}
+	@-webkit-keyframes minus-rotate {
+		from {
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes minus-rotate {
+		from {
+			transform: rotate(360deg);
+		}
+	}
+
+	&.about-us {
+		.hero {
+			&__box {
+				width: 98.8rem;
+				height: -webkit-fit-content;
+				height: -moz-fit-content;
+				height: fit-content;
+				position: absolute;
+				top: 27.9rem;
+				left: 16rem;
+				color: #fff;
+				z-index: 4;
+				pointer-events: all;
+
+				&-subtitle {
+					font-weight: 300;
+					color: #fff;
+				}
+
+				&-title {
+					margin-top: 5.6rem;
+					margin-bottom: 1.5rem;
+					text-transform: uppercase;
+					color: #d9d9d9;
+				}
+
+				.request-btn {
+					margin-top: 4rem;
+				}
+			}
+			&__img {
+				z-index: 3;
+				margin-top: 15rem;
+				margin-left: auto;
+				margin-right: 16rem;
+				margin-bottom: 10.5rem;
+				width: 74rem;
+				height: 71rem;
+				border-radius: 0;
+				position: relative;
+				overflow: visible;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 18rem;
+					height: 18rem;
+					border-bottom: 1px solid white;
+					border-right: 1px solid white;
+					opacity: 0.6;
+					right: -2rem;
+					bottom: -2rem;
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					width: 18rem;
+					height: 18rem;
+					border-top: 1px solid white;
+					border-left: 1px solid white;
+					opacity: 0.6;
+					left: -2rem;
+					top: -2rem;
+				}
+
+				&-decor {
+					width: 20.5rem;
+					height: 20.6rem;
+					position: absolute;
+					bottom: -8.7rem;
+					left: -10.3rem;
+					-webkit-animation: rotate 20s linear infinite;
+					animation: rotate 20s linear infinite;
+
+					img {
+						width: 100%;
+						height: 100%;
+						-o-object-fit: contain;
+						object-fit: contain;
+					}
+				}
+			}
+		}
+	}
+
 	@media (max-width: 48em) {
 		height: 97.9rem * 2;
 
@@ -231,7 +339,6 @@
 				right: 3.2rem;
 				bottom: 5.4rem;
 			}
-
 
 			.main-hero-swiper {
 				height: 100%;
@@ -303,6 +410,76 @@
 			bottom: auto;
 
 			font-size: 32rem;
+		}
+
+		&.about-us {
+			flex-direction: column;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			.hero {
+				&__box {
+					width: 100%;
+					height: -webkit-fit-content;
+					height: -moz-fit-content;
+					height: fit-content;
+					position: static;
+					padding-top: 9.2rem * 2;
+					padding-left: 3.2rem;
+					padding-right: 3.2rem;
+
+					.request-btn {
+						&__box {
+							border-color: #fff;
+							
+						}
+
+						&__text {
+							color: #fff;
+						}
+
+						&__icon {
+							background-color: #fff;
+
+							svg {
+								path {
+									fill: $black;
+								}
+							}
+						}
+					}
+
+					&-title {
+						margin-top: 1.6rem;
+						margin-bottom: 4rem;
+					}
+
+					.request-btn {
+						margin-top: 4rem;
+					}
+				}
+				&__img {
+					display: block;
+					z-index: 3;
+					margin: 0;
+					margin-top: 6.2rem;
+
+					width: 100%;
+					height: 34.9rem * 2;
+
+					&::after {
+						display: none;
+					}
+
+					&::before {
+						display: none;
+					}
+
+					&-decor {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }

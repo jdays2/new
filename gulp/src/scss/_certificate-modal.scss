@@ -96,15 +96,18 @@
 		}
 	}
 	@media (max-width: 48em) {
+		display: block !important;
+		overflow: auto !important;
+
 		.modal__close {
 			width: 4.4rem;
 			height: 4.4rem;
-			top: 8rem;
 			right: 3.6rem;
 		}
 
 		.modal__content {
-			height: 100%;
+			min-height: 100%;
+			padding-top: 18rem;
 		}
 
 		.certificate-modal-swiper-thumbs {
@@ -113,11 +116,16 @@
 
 		.certificate-modal-swiper {
 			width: 34.3rem * 2;
-			height: 49.8rem * 2;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			&__card {
+				height: 49.8rem * 2;
+			}
 		}
 		.certificate-modal__arrows {
 			width: 34.3rem * 2;
-      margin-top: 4rem;
+			margin-top: 4rem;
 		}
 		.certificate-modal-swiper__arrow {
 			&.next,
