@@ -18,6 +18,9 @@ const heroSwiper = new Swiper('.main-hero-swiper', {
 	pagination: {
 		el: '.hero__swiper-fraction',
 		type: 'fraction',
+		renderFraction: function (currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span><span class="custom-separator">/</span><span class="' + totalClass + '"></span>';
+    },
 	},
 	navigation: {
 		nextEl: '.hero__swiper-navigation-arrow.next',
@@ -115,6 +118,9 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 	pagination: {
 		el: '.feedback__swiper-fraction',
 		type: 'fraction',
+		renderFraction: function (currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span><span class="custom-separator">/</span><span class="' + totalClass + '"></span>';
+    },
 	},
 	navigation: {
 		nextEl: '.feedback__pagination-arrow.next',
