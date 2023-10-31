@@ -71,4 +71,14 @@ ymaps.ready(function () {
 	);
 
 	map.geoObjects.add(placemark);
+
+	const checkScreenWidth = () => {
+		if (window.innerWidth < 768) {
+			placemark.balloon.close();
+		}
+	};
+
+	// Вызываем функцию при загрузке страницы и изменении размера окна
+	checkScreenWidth();
+	window.addEventListener('resize', checkScreenWidth);
 });
