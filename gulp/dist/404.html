@@ -11,16 +11,16 @@
 		<link
 			rel="stylesheet"
 			href="./src/css/main.css" />
-
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-		<title>Document</title>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
+			type="text/javascript"></script>
+		<title>ESK | Страница не найдена</title>
 	</head>
-	<body class="test">
+	<body>
 		<header class="header">
 	<div class="container">
 		<button class="burger__btn">
@@ -172,24 +172,52 @@
 </header>
 
 		<section class="section">
-			<div class="container">
-				<nav class="test__list">
-					<a 
-						class="test__list-item title3"
-						href="./dist/main.html">
-						&#129299; main (mobile&desk)
-					</a>
-					<a 
-						class="test__list-item title3"
-						href="./dist/about.html">
-						&#129396; about us (mobile&desk)
-					</a>
-					<a 
-						class="test__list-item title3"
-						href="./dist/404.html">
-						&#128552; 404 (mobile&desk)
-					</a>
-				</nav>
+			<div class="container container--max not-found">
+				<div class="not-found__box">
+					<div class="not-found__top-part">
+						<div class="not-found__bg-text">404</div>
+						<div class="not-found__top-content">
+							<p class="title3">
+								Похоже, мы не можем найти нужную вам страницу
+							</p>
+							<a
+								class="link-btn"
+								href="#">
+								<span class="link-btn__text">Вернуться на главную</span>
+								<div class="link-btn__icon">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M8 16.5L16.5 8M16.5 8V15M16.5 8H9.5"
+											stroke="white"
+											stroke-width="1.5"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="not-found__error-text">
+							<span>4</span>
+							<span>4</span>
+						</div>
+					</div>
+					<div class="not-found__bottom-part">
+						<div class="not-found__error-text not-found__error-text--yellow">
+							<span>4</span>
+							<span>4</span>
+						</div>
+					</div>
+					<div class="not-found__img">
+						<img
+							src="./src/images/webp/404.webp"
+							alt="" />
+					</div>
+				</div>
 			</div>
 		</section>
 	</body>

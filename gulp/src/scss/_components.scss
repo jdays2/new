@@ -143,7 +143,7 @@ $white: rgba(255, 255, 255, 1);
 	&__icon {
 		width: 2.4rem;
 		height: 2.4rem;
-		img {
+		svg, img {
 			width: 100%;
 			height: 100%;
 			-o-object-fit: contain;
@@ -455,12 +455,11 @@ $white: rgba(255, 255, 255, 1);
 	}
 	@media (max-width: 48em) {
 		padding-bottom: 20rem;
-		
+
 		&__head {
 			width: 100%;
 			&-discription {
-				width: 34.3rem*2;
-				
+				width: 34.3rem * 2;
 			}
 		}
 		&__arrows {
