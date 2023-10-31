@@ -51,10 +51,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0;
-		display: none !important;
+		transition: 0.4s;
+		opacity: 0 !important;
 
 		&.active {
-			display: flex !important;
+			opacity: 1 !important;
 		}
 
 		&.moscow {
@@ -148,9 +149,11 @@
 			}
 		}
 	}
-
-	&__box {
+	&__box-wrapper {
+		width: 100%;
 		@include border(top);
+	}
+	&__box {
 		width: 160rem;
 		margin: 0 auto;
 		position: relative;
@@ -175,16 +178,20 @@
 			&.active {
 				stroke: $yellow;
 				fill: $yellow;
+				transition: 0.4s;
 				path {
 					stroke: $yellow;
 					fill: $yellow;
+					transition: 0.4s;
 				}
 				mask {
 					stroke: $yellow;
 					fill: $yellow;
+					transition: 0.4s;
 
 					path {
 						stroke: $yellow;
+						transition: 0.4s;
 						fill: $yellow;
 					}
 				}
@@ -198,11 +205,13 @@
 			position: absolute;
 			top: 22.5rem;
 		}
+
 		&__message {
 			position: static;
 			order: 2;
 			padding-left: 3.2rem;
 			padding-right: 3.2rem;
+			width: 100%;
 		}
 
 		&__map {
@@ -240,7 +249,7 @@
 				padding: 0.8rem;
 				padding-right: 3.2rem;
 				gap: 2.4rem;
-				border-radius:6rem;
+				border-radius: 6rem;
 
 				&-icon {
 					width: 3.6rem * 2;

@@ -1,3 +1,15 @@
+//функция для добавления активного класса к модалке
+const setModal = (btns, modal) => {
+	const activeClass = 'active';
+
+	btns.forEach((btn) => {
+		btn.addEventListener('click', (e) => {
+			e.preventDefault();
+			modal.classList.add(activeClass);
+		});
+	});
+};
+
 //закрытие модалки
 const modalCloseBtns = document.querySelectorAll('.modal__close');
 const modals = document.querySelectorAll('.modal');
@@ -27,22 +39,20 @@ const sertificateBtns = document.querySelectorAll('.certificate__show-btn');
 const sertificateModal = document.querySelector('.certificate-modal');
 
 if (sertificateBtns) {
-	const activeClass = 'active';
-	sertificateBtns.forEach((btn) => {
-		btn.addEventListener('click', () => {
-			sertificateModal.classList.add(activeClass);
-		});
-	});
+	setModal(sertificateBtns, sertificateModal);
 }
 
-const feedbackImageBtn = document.querySelectorAll('.feedback__btn');
+const feedbackImageBtns = document.querySelectorAll('.feedback__btn');
 const feedbackImageModal = document.querySelector('.feedback-image');
 
-if (feedbackImageBtn) {
-	const activeClass = 'active';
-	feedbackImageBtn.forEach((btn) => {
-		btn.addEventListener('click', () => {
-			feedbackImageModal.classList.add(activeClass);
-		});
-	});
+if (feedbackImageBtns) {
+	setModal(feedbackImageBtns, feedbackImageModal);
+}
+
+//показать модалку при отправке заявки
+const requestBtns = document.querySelectorAll('.send-request-btn');
+const requestModal = document.querySelector('.request-sended');
+
+if (requestBtns) {
+	setModal(requestBtns, requestModal);
 }

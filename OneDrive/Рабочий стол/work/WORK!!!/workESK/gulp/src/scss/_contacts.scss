@@ -18,6 +18,9 @@
 	}
 
 	@media (max-width: 48em) {
+		&__left-side {
+			border: none;
+		}
 		&__box {
 			width: 100%;
 			height: -webkit-fit-content;
