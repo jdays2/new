@@ -1,0 +1,280 @@
+.geo {
+	@include border(bottom);
+	&__marker-box {
+		padding: 0.4rem;
+		padding-right: 1.6rem;
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		border-radius: 3rem;
+		border: 1px solid var(--black, #343333);
+		background: #fff;
+		z-index: 3;
+		&-icon {
+			width: 4.8rem;
+			height: 4.8rem;
+			background-color: $yellow;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+
+			img {
+				width: 2.4rem;
+				height: 2.4rem;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+	}
+
+	&__message {
+		width: 43rem;
+		position: absolute;
+		top: 5.6rem;
+		left: 0;
+	}
+
+	&__arrow {
+		z-index: 1;
+		svg {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+	}
+
+	&__marker {
+		position: absolute;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+		transition: 0.4s;
+		opacity: 0 !important;
+
+		&.active {
+			opacity: 1 !important;
+		}
+
+		&.moscow {
+			top: 40.5rem;
+			left: 23rem;
+
+			.geo__arrow {
+				width: 12px;
+				height: 44px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		&.moscow-obl {
+			top: 26.8rem;
+			left: 10.6rem;
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+
+			.geo__arrow {
+				width: 3.55rem;
+				height: 6rem;
+				margin-left: auto;
+				margin-right: 7rem;
+				margin-top: -0.2rem;
+			}
+		}
+		&.arch {
+			top: 18.2rem;
+			left: 32rem;
+
+			.geo__arrow {
+				margin-left: auto;
+				margin-right: auto;
+				width: 1.2rem;
+				height: 6.8rem;
+			}
+		}
+		&.nenec {
+			top: 24.2rem;
+			left: 64.1rem;
+
+			.geo__arrow {
+				margin-left: -2rem;
+				margin-right: auto;
+				margin-top: -0.2rem;
+				width: 4.8305rem;
+				height: 5.0314rem;
+			}
+		}
+		&.komi {
+			top: 41.5rem;
+			left: 45.3rem;
+
+			.geo__arrow {
+				margin-left: 7.7rem;
+				margin-right: auto;
+				margin-bottom: -0.2rem;
+				width: 3.7866rem;
+				height: 5.9499rem;
+			}
+		}
+		&.krasn {
+			top: 38.6rem;
+			left: 91.5rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.geo__marker-box {
+				order: 1;
+			}
+			.geo__arrow {
+				width: 6.8rem;
+				height: 1.2rem;
+			}
+		}
+		&.irkutsk {
+			left: 101.6rem;
+			top: 57.6rem;
+
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.geo__marker-box {
+				order: 1;
+			}
+			.geo__arrow {
+				width: 6.8rem;
+				height: 1.2rem;
+			}
+		}
+	}
+	&__box-wrapper {
+		width: 100%;
+		@include border(top);
+	}
+	&__box {
+		width: 160rem;
+		margin: 0 auto;
+		position: relative;
+		padding: 5.6rem;
+	}
+
+	&__map {
+		width: 142.8rem;
+		height: 74.5rem;
+		margin-left: auto;
+		svg {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: contain;
+			object-fit: contain;
+		}
+
+		&-region {
+			cursor: pointer;
+			z-index: 10;
+			position: relative;
+			&.active {
+				stroke: $yellow;
+				fill: $yellow;
+				transition: 0.4s;
+				path {
+					stroke: $yellow;
+					fill: $yellow;
+					transition: 0.4s;
+				}
+				mask {
+					stroke: $yellow;
+					fill: $yellow;
+					transition: 0.4s;
+
+					path {
+						stroke: $yellow;
+						transition: 0.4s;
+						fill: $yellow;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: 48em) {
+		position: relative;
+		&__subtitle {
+			position: absolute;
+			top: 22.5rem;
+		}
+
+		&__message {
+			position: static;
+			order: 2;
+			padding-left: 3.2rem;
+			padding-right: 3.2rem;
+			width: 100%;
+		}
+
+		&__map {
+			order: 1;
+			width: 100%;
+			height: -webkit-fit-content;
+			height: -moz-fit-content;
+			height: fit-content;
+			overflow: auto;
+			svg {
+				width: 104.8rem * 2;
+				height: 54.7 * 2rem;
+				overflow: auto;
+			}
+		}
+
+		&__box {
+			width: 100%;
+			padding: 0;
+			padding-top: 6rem;
+			padding-bottom: 4.8rem;
+			display: flex;
+			flex-direction: column;
+			gap: 4.8rem;
+		}
+
+		&__info-block {
+			position: absolute;
+			top: 20rem;
+			left: 3.2rem;
+		}
+
+		&__marker {
+			&-box {
+				padding: 0.8rem;
+				padding-right: 3.2rem;
+				gap: 2.4rem;
+				border-radius: 6rem;
+
+				&-icon {
+					width: 3.6rem * 2;
+					height: 3.6rem * 2;
+
+					img {
+						width: 4.4rem;
+						height: 4.4rem;
+					}
+				}
+			}
+			&.komi,
+			&.nenec,
+			&.krasn,
+			&.irkutsk,
+			&.arch,
+			&.moscow-obl,
+			&.moscow {
+				top: 12.4rem;
+				left: 3.2rem;
+
+				.geo__arrow {
+					display: none;
+				}
+			}
+		}
+	}
+}

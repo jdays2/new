@@ -1,0 +1,52 @@
+.nav {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	&--dark {
+		.nav__links-item {
+			color: $black;
+		}
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 4rem;
+
+		&-item {
+			color: $white;
+			&--email {
+				margin-left: auto;
+				margin-right: 4rem;
+			}
+		}
+	}
+
+	@media (max-width: 48em) {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+
+		&__links {
+			display: none;
+			&-item--email {
+				display: none;
+			}
+		}
+
+		.request-btn {
+			&__box {
+				display: none;
+			}
+			&__icon {
+				background-color: $white;
+				svg {
+					path {
+						fill: $black;
+					}
+				}
+			}
+		}
+	}
+}

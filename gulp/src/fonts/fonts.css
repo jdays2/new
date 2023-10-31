@@ -1,0 +1,41 @@
+@font-face {
+	font-family: 'Akzidenz';
+	font-style: normal;
+	font-weight: 700;
+	src: url('./akzidenzgroteskpro-boldex.woff2') format('woff2'),
+		url('./akzidenzgroteskpro-boldex.woff') format('woff'),
+		url('./akzidenzgroteskpro-boldex.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Akzidenz';
+	font-style: normal;
+	font-weight: 500;
+	src: url('./akzidenzgroteskpro_mdex.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./Gilroy-Light.woff') format('woff'),
+		url('./Gilroy-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./Gilroy-Regular.ttf') format('truetype'),
+		url('./Gilroy-Regular.woff') format('woff'),
+		url('./Gilroy-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./Gilroy-Medium.ttf') format('truetype'),
+		url('./Gilroy-Medium.woff') format('woff'),
+		url('./Gilroy-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}

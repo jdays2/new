@@ -1,0 +1,13 @@
+.test {
+	background: #EBEBEB;
+	padding-top: 20rem;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		&-item {
+			text-decoration: underline;
+		}
+	}
+}

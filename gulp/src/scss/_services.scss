@@ -1,0 +1,177 @@
+.services {
+	@include border(bottom);
+	&__tabs {
+		width: 100%;
+		margin-bottom: 5.7rem;
+		background-color: $yellow;
+    @include border(top);
+    @include border(bottom);
+
+		&-list {
+			width: 160rem;
+			margin: 0 auto;
+			gap: 2.5rem;
+			align-items: center;
+			display: flex;
+			padding-top: 4.4rem;
+			padding-bottom: 4.4rem;
+		}
+		&-item {
+			cursor: pointer;
+			padding: 1rem 2.6rem;
+			border-radius: 3rem;
+			border: 1px solid transparent;
+			background: transparent;
+			width: -webkit-fit-content;
+			width: -moz-fit-content;
+			width: fit-content;
+			white-space: nowrap;
+			&.active {
+				border: 1px solid $black;
+				background: $white;
+			}
+		}
+	}
+	&__box {
+		width: 160rem;
+		margin: 0 auto;
+
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 4rem;
+		padding-left: 4.1rem;
+		padding-right: 6.4rem;
+	}
+
+	&__info-elem {
+		display: flex;
+		gap: 1.75rem;
+		align-items: center;
+		position: absolute;
+		padding: 1.2rem 1.8rem;
+		border-radius: 40rem;
+		border: 1px solid $gray;
+		&-icon {
+			width: 2.25rem;
+			height: 2.2229rem;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+
+		&--first {
+			left: 0.9rem;
+			top: 7.1rem;
+		}
+
+		&--second {
+			right: -6.4rem;
+			top: 25.1rem;
+		}
+
+		&--third {
+			bottom: 6.6rem;
+			left: -1.4rem;
+		}
+	}
+
+	&__circle-block {
+		width: 59.6rem;
+		height: 59.6rem;
+		border-radius: 50%;
+		position: relative;
+		background-color: $white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&-box {
+			display: flex;
+			flex-direction: column;
+			gap: 2.4rem;
+			width: 44.1rem;
+			text-align: center;
+		}
+
+		img {
+			border-radius: 50%;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+
+		.details-btn {
+			position: absolute;
+			top: 35rem;
+			right: -2.2rem;
+		}
+	}
+
+	@media (max-width: 48em) {
+		&__box {
+			flex-direction: column-reverse;
+			width: 34.3rem * 2;
+			margin: 0 auto;
+			padding: 0;
+			padding-bottom: 4.8rem;
+			gap: 6.4rem;
+		}
+
+		&__circle-block {
+			width: 26.1rem * 2;
+			height: 26.1rem * 2;
+      .details-btn {
+        top: 0;
+        right: -4.2rem;
+      }
+			&:last-child {
+				background-color: transparent;
+				border-radius: 0;
+				width: 100%;
+				height: -webkit-fit-content;
+				height: -moz-fit-content;
+				height: fit-content;
+
+				.services__circle-block-box {
+					width: 100%;
+					gap: 3.2rem;
+					height: -webkit-fit-content;
+					height: -moz-fit-content;
+					height: fit-content;
+				}
+				.services__info-elem {
+					display: none;
+				}
+			}
+		}
+		&__tabs {
+			margin-bottom: 4.8rem;
+			&-item {
+				padding: 1.6rem 4rem;
+				border-radius: 6rem;
+			}
+			&-list {
+				gap: 0;
+				padding-left: 3.2rem;
+				padding-top: 4rem;
+				padding-bottom: 4rem;
+				width: 100%;
+				overflow: auto;
+
+				&::-webkit-scrollbar {
+					width: 0;
+				}
+
+				&::-webkit-scrollbar {
+					height: 0;
+				}
+			}
+		}
+	}
+}
