@@ -52,11 +52,6 @@
 				<a
 					href=""
 					class="nav__links-item text1">
-					Статьи
-				</a>
-				<a
-					href=""
-					class="nav__links-item text1">
 					Вакансии
 				</a>
 				<a
@@ -72,7 +67,7 @@
 				info@esccom.ru
 			</a>
 
-			<button class="request-btn">
+			<button class="request-btn leave-request">
 				<div class="request-btn__box">
 					<span class="request-btn__text">Оставить заявку</span>
 				</div>
@@ -147,7 +142,7 @@
 					+ 7 (821) 496 00-14
 				</a>
 			</nav>
-			<button class="request-btn request-btn--dark">
+			<button class="request-btn request-btn--dark leave-request">
 				<div class="request-btn__box">
 					<span class="request-btn__text">Оставить заявку</span>
 				</div>
@@ -309,34 +304,39 @@
 				<div class="services__tabs">
 					<ul class="services__tabs-list select-block">
 						<li
+							class="services__tabs-item select-block__item"
+							data-tab-path="Обслуживание удаленных объектов">
+							<span class="text1">Обслуживание удаленных объектов</span>
+						</li>
+
+						<li
 							class="services__tabs-item select-block__item active tab__title"
 							data-tab-path="КОРПОРАТИВНОЕ ПИТАНИЕ">
 							<span class="text1">Корпоративное питание</span>
 						</li>
-						<li
-							class="services__tabs-item select-block__item tab__title"
-							data-tab-path="Химчистка">
-							<span class="text1">Химчистка</span>
-						</li>
+
 						<li
 							class="services__tabs-item select-block__item"
 							data-tab-path="Клининг">
 							<span class="text1">Клининг</span>
 						</li>
-						<li
-							class="services__tabs-item select-block__item"
-							data-tab-path="Обслуживание и ремонт зданий">
-							<span class="text1">Обслуживание и ремонт зданий</span>
-						</li>
+
 						<li
 							class="services__tabs-item select-block__item"
 							data-tab-path="Кейтеринг">
 							<span class="text1">Кейтеринг</span>
 						</li>
+
+						<li
+							class="services__tabs-item select-block__item tab__title"
+							data-tab-path="Химчистка">
+							<span class="text1">Прачечная / Химчистка</span>
+						</li>
+
 						<li
 							class="services__tabs-item select-block__item"
-							data-tab-path="Обслуживание удаленных объектов">
-							<span class="text1">Обслуживание удаленных объектов</span>
+							data-tab-path="Обслуживание и ремонт зданий">
+							<span class="text1">Эксплуатация и ремонт зданий.</span>
 						</li>
 					</ul>
 				</div>
@@ -757,134 +757,119 @@
 		</section>
 
 		<section class="section">
-  <div class="container container--max benefits">
-    <div class="section__head">
-      <p class="section__head-title text5">преимущества</p>
-      <p class="section__head-discription text1">
-        ЕСК – всероссийская компания, специализирующаяся на аутсорсинге
-        промышленно-хозяйственных функций для крупных предприятий
-      </p>
-    </div>
+	<div class="container container--max benefits">
+		<div class="section__head">
+			<p class="section__head-title text5">преимущества</p>
+			<p class="section__head-discription text1">
+				ЕСК – всероссийская компания, специализирующаяся на аутсорсинге
+				промышленно-хозяйственных функций для крупных предприятий
+			</p>
+		</div>
 
-    <div class="benefits__box">
-      <nav class="benefits__list">
-        <a
-          href="#"
-          class="benefits__item">
-          <div class="benefits__item-head">
-            <span class="benefits__item-icon">
-              <img
-                src="./src/images/svg/quality.svg"
-                alt="" />
-            </span>
-            <p class="benefits__item-title text3">
-              Большой опыт работы на удаленных объектах
-            </p>
-          </div>
+		<div class="benefits__box">
+			<nav class="benefits__list">
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/quality.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">
+							Большой опыт работы на удаленных объектах
+						</p>
+					</div>
 
-          <div class="benefits__item-content text1">
-            Имеем большой опыт обслуживания объектов в отдаленных регионах
-            со сложным рельефом и суровыми климатическими условиями
-          </div>
-        </a>
+					<div class="benefits__item-content text1">
+						Имеем большой опыт обслуживания объектов в отдаленных регионах со
+						сложным рельефом и суровыми климатическими условиями
+					</div>
+				</div>
 
-        <a
-          href="#"
-          class="benefits__item">
-          <div class="benefits__item-head">
-            <span class="benefits__item-icon">
-              <img
-                src="./src/images/svg/shield.svg"
-                alt="" />
-            </span>
-            <p class="benefits__item-title text3">
-              Система контроля качества
-            </p>
-          </div>
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/shield.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Система контроля качества</p>
+					</div>
 
-          <div class="benefits__item-content text1">
-            Уделяем особое внимание технике безопасности, охране труда,
-            соблюдаем стандарты ХАССП
-          </div>
-        </a>
+					<div class="benefits__item-content text1">
+						Уделяем особое внимание технике безопасности, охране труда,
+						соблюдаем стандарты ХАССП
+					</div>
+				</div>
 
-        <a
-          href="#"
-          class="benefits__item">
-          <div class="benefits__item-head">
-            <span class="benefits__item-icon">
-              <img
-                src="./src/images/svg/calc.svg"
-                alt="" />
-            </span>
-            <p class="benefits__item-title text3">
-              Автоматизированный учет
-            </p>
-          </div>
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/calc.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Автоматизированный учет</p>
+					</div>
 
-          <div class="benefits__item-content text1">
-            Повышаем эффективность и точность учета питающихся и проживающих
-            с автоматизированной системой
-          </div>
-        </a>
+					<div class="benefits__item-content text1">
+						Повышаем эффективность и точность учета питающихся и проживающих с
+						автоматизированной системой
+					</div>
+				</div>
 
-        <a
-          href="#"
-          class="benefits__item">
-          <div class="benefits__item-head">
-            <span class="benefits__item-icon">
-              <img
-                src="./src/images/svg/time.svg"
-                alt="" />
-            </span>
-            <p class="benefits__item-title text3">Быстрый запуск проекта</p>
-          </div>
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/time.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Быстрый запуск проекта</p>
+					</div>
 
-          <div class="benefits__item-content text1">
-            Быстрые сроки запуска услуг на объекте: гарантированная
-            эффективность и безотказная работа
-          </div>
-        </a>
+					<div class="benefits__item-content text1">
+						Быстрые сроки запуска услуг на объекте: гарантированная
+						эффективность и безотказная работа
+					</div>
+				</div>
 
-        <a
-          href="#"
-          class="benefits__item">
-          <div class="benefits__item-head">
-            <span class="benefits__item-icon">
-              <img
-                src="./src/images/svg/hand-heart.svg"
-                alt="" />
-            </span>
-            <p class="benefits__item-title text3">Индивидуальный подход</p>
-          </div>
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/hand-heart.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Индивидуальный подход</p>
+					</div>
 
-          <div class="benefits__item-content text1">
-            Разрабатываем уникальные решения, учитывая все особенности и
-            пожелания каждого конкретного клиента
-          </div>
-        </a>
+					<div class="benefits__item-content text1">
+						Разрабатываем уникальные решения, учитывая все особенности и
+						пожелания каждого конкретного клиента
+					</div>
+				</div>
 
-        <a
-          href="#"
-          class="benefits__item">
-          <div class="benefits__item-head">
-            <span class="benefits__item-icon">
-              <img
-                src="./src/images/svg/rate.svg"
-                alt="" />
-            </span>
-            <p class="benefits__item-title text3">Единый подрядчик</p>
-          </div>
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/rate.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Единый подрядчик</p>
+					</div>
 
-          <div class="benefits__item-content text1">
-            Разрабатываем уникальные решения, учитывая все особенности и
-            пожелания каждого конкретного клиента
-          </div>
-        </a>
-      </nav>
-    </div>
-  </div>
+					<div class="benefits__item-content text1">
+						Разрабатываем уникальные решения, учитывая все особенности и
+						пожелания каждого конкретного клиента
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
 </section>
+
 
 		<section class="section">
 			<div class="container container--max info">
@@ -1218,55 +1203,51 @@
                 src="./src/images/webp/sber.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
                 src="./src/images/webp/rosneft.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
                 src="./src/images/webp/lukoil.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
                 src="./src/images/webp/zarubej.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
                 src="./src/images/webp/trans.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/siemen.webp"
+                src="./src/images/webp/bashneft.webp"
                 alt="" />
             </li>
 
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/gaz.webp"
+                src="./src/images/webp/siements.webp"
                 alt="" />
             </li>
 
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/slb.webp"
+                src="./src/images/webp/gazprom.webp"
                 alt="" />
             </li>
 
-            <li class="swiper-slide partners__list-item">
-              <img
-                src="./src/images/webp/baker.webp"
-                alt="" />
-            </li>
-
-            <li class="swiper-slide partners__list-item">
-              <img
-                src="./src/images/webp/global.webp"
-                alt="" />
-            </li>
+            
+            
           </ul>
         </div>
       </div>
@@ -1278,53 +1259,40 @@
                 src="./src/images/webp/slb.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
                 src="./src/images/webp/baker.webp"
                 alt="" />
             </li>
+
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/global.webp"
-                alt="" />
-            </li>
-            <li class="swiper-slide partners__list-item">
-              <img
-                src="./src/images/webp/neftifa.webp"
-                alt="" />
-            </li>
-            <li class="swiper-slide partners__list-item">
-              <img
-                src="./src/images/webp/rbp.webp"
-                alt="" />
-            </li>
-            <li class="swiper-slide partners__list-item">
-              <img
-                src="./src/images/webp/ceb.webp"
+                src="./src/images/webp/globalstroy.webp"
                 alt="" />
             </li>
 
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/ctg.webp"
+                src="./src/images/webp/neftisa.webp"
                 alt="" />
             </li>
 
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/sber.webp"
+                src="./src/images/webp/pbp.webp"
                 alt="" />
             </li>
 
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/rosneft.webp"
+                src="./src/images/webp/gebmash.webp"
                 alt="" />
             </li>
 
             <li class="swiper-slide partners__list-item">
               <img
-                src="./src/images/webp/lukoil.webp"
+                src="./src/images/webp/stg.webp"
                 alt="" />
             </li>
           </ul>
@@ -2991,11 +2959,7 @@
 					class="nav__links-item text1">
 					О компании
 				</a>
-				<a
-					href=""
-					class="nav__links-item text1">
-					Статьи
-				</a>
+				
 				<a
 					href=""
 					class="nav__links-item text1">
@@ -3045,27 +3009,7 @@
 	</div>
 </footer>
 
-<!-- ваша заявка отправлена -->
-<div class="modal request-sended">
-	<div class="modal__content">
-		<button class="modal__close">
-			<img
-				src="./src/images/svg/close-btn.svg"
-				alt="" />
-		</button>
-		<p class="modal__title title2">ваша заявка отправлена!</p>
-		<a
-			class="link-btn"
-			href="#">
-			<span class="link-btn__text">Продолжить</span>
-			<div class="link-btn__icon">
-				<img
-					src="src/images/svg/arrow-top.svg"
-					alt="" />
-			</div>
-		</a>
-	</div>
-</div>
+
 
 <!-- связаться с нами -->
 <div class="modal contact-us">
@@ -3146,9 +3090,9 @@
 				</div>
 			</div>
 
-			<button class="request-btn request-btn--dark">
+			<button class="request-btn request-btn--dark send-request-btn">
 				<div class="request-btn__box">
-					<span class="request-btn__text">Отправить анкету</span>
+					<span class="request-btn__text">Отправить заявку</span>
 				</div>
 				<span class="request-btn__icon">
 					<svg
@@ -3323,6 +3267,7 @@
 	</div>
 </div>
 
+<!-- подробная информация об адресe на карте, baloon -->
 <div class="modal map-modal-baloon">
 	<div class="modal__content">
 		<button class="modal__close">
@@ -3375,6 +3320,28 @@
 					alt="" />
 			</div>
 				</div>
+	</div>
+</div>
+
+<!-- ваша заявка отправлена -->
+<div class="modal request-sended">
+	<div class="modal__content">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</button>
+		<p class="modal__title title2">ваша заявка отправлена!</p>
+		<a
+			class="link-btn"
+			href="#">
+			<span class="link-btn__text">Продолжить</span>
+			<div class="link-btn__icon">
+				<img
+					src="src/images/svg/arrow-top.svg"
+					alt="" />
+			</div>
+		</a>
 	</div>
 </div>
 

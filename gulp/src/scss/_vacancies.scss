@@ -1,0 +1,102 @@
+.vacancies {
+	padding-top: 17rem;
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 5.5rem;
+	}
+
+	&__title {
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+
+	&__discription {
+		width: 74rem;
+		margin-bottom: 0.6rem;
+	}
+
+	&__list {
+		width: 53.2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__item {
+    cursor: pointer;
+
+		width: 100%;
+		@include white-bg-yellow;
+		display: flex;
+		height: 24.8rem;
+		position: relative;
+
+		&-btn {
+			position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+			width: 5.6rem;
+			height: 5.6rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: center;
+			background-color: #fff;
+			border-radius: 50%;
+      
+			img {
+				width: 2.4rem;
+				height: 2.4rem;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+
+		&-title {
+			margin-bottom: auto;
+		}
+
+		&-icon {
+			width: 2.4rem;
+			height: 2.4rem;
+
+			img {
+				width: 100%;
+				height: 100%;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+
+		&-img {
+			height: 100%;
+			width: 21.3rem;
+		}
+
+		&-box {
+			padding: 2.4rem 1.6rem;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-row {
+			display: flex;
+			gap: 1.2rem;
+			align-items: flex-end;
+			&:not(:last-child) {
+				margin-bottom: 1.6rem;
+			}
+			&-text {
+				font-family: Gilroy;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 140%;
+			}
+		}
+	}
+}

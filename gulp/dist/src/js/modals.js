@@ -56,3 +56,10 @@ const requestModal = document.querySelector('.request-sended');
 if (requestBtns) {
 	setModal(requestBtns, requestModal);
 }
+
+//показ модалки для заявки
+const leaveRequestBtns = document.querySelectorAll('.leave-request');
+const contactUsModal = document.querySelector('.contact-us');
+if (leaveRequestBtns) {
+	setModal(leaveRequestBtns, contactUsModal);
+}

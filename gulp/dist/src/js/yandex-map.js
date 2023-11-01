@@ -1,7 +1,7 @@
 ymaps.ready(function () {
 	var map = new ymaps.Map('map', {
-		center: [55.807749, 37.570141],
-		zoom: 13,
+		center: [55.754203, 37.559988],
+		zoom: 16,
 		controls: [],
 	});
 
@@ -52,7 +52,7 @@ ymaps.ready(function () {
 		</div>`);
 
 	const placemark = new ymaps.Placemark(
-		[55.80999, 37.541841],
+		[55.754203, 37.556388],
 		{
 			balloonContentHeader: 'Заголовок вашего кастомного балуна',
 			balloonContentBody: 'Содержимое вашего кастомного балуна',

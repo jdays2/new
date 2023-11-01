@@ -221,7 +221,8 @@ $white: rgba(255, 255, 255, 1);
 
 			svg {
 				path {
-					stroke: $white;
+					stroke: $black;
+					fill: $white;
 				}
 			}
 		}

@@ -19,8 +19,14 @@ const heroSwiper = new Swiper('.main-hero-swiper', {
 		el: '.hero__swiper-fraction',
 		type: 'fraction',
 		renderFraction: function (currentClass, totalClass) {
-      return '<span class="' + currentClass + '"></span><span class="custom-separator">/</span><span class="' + totalClass + '"></span>';
-    },
+			return (
+				'<span class="' +
+				currentClass +
+				'"></span><span class="custom-separator">/</span><span class="' +
+				totalClass +
+				'"></span>'
+			);
+		},
 	},
 	navigation: {
 		nextEl: '.hero__swiper-navigation-arrow.next',
@@ -74,16 +80,19 @@ const swiperPartners = new Swiper('.swiper-partners', {
 	spaceBetween: rem(6.4), // задаем отступы
 	loop: true, //зацикливаем, что бы движание было бесконечным
 	allowTouchMove: false, // можно ещё отключить свайп
-	autoplay: { //задаем автоплей по умолчанию с нулевой задержкой
- 		delay: 0,
+	autoplay: {
+		//задаем автоплей по умолчанию с нулевой задержкой
+		delay: 0,
+		reverseDirection: true,
 		disableOnInteraction: false, // отключаем возможность отлючить анимацию при касании
 	},
-	breakpoints: { //стандартные настройки, котрые не так важны
+	breakpoints: {
+		//стандартные настройки, котрые не так важны
 		769: {
 			slidesPerView: 7,
 		},
 		320: {
-			slidesPerView: 2.25,
+			slidesPerView: 2,
 			spaceBetween: rem(2.4),
 		},
 	},
@@ -93,18 +102,18 @@ const swiperPartners2 = new Swiper('.swiper-partners2', {
 	speed: 10000,
 	spaceBetween: rem(6.4),
 	loop: true,
-	allowTouchMove: false, // можно ещё отключить свайп
+	allowTouchMove: false,
 	autoplay: {
 		delay: 0,
-		reverseDirection: true,
-		disableOnInteraction: false, // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+
+		disableOnInteraction: false,
 	},
 	breakpoints: {
 		769: {
-			slidesPerView: 7,
+			slidesPerView: 6,
 		},
 		320: {
-			slidesPerView: 2.25,
+			slidesPerView: 2,
 			spaceBetween: rem(2.4),
 		},
 	},
@@ -119,8 +128,14 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 		el: '.feedback__swiper-fraction',
 		type: 'fraction',
 		renderFraction: function (currentClass, totalClass) {
-      return '<span class="' + currentClass + '"></span><span class="custom-separator">/</span><span class="' + totalClass + '"></span>';
-    },
+			return (
+				'<span class="' +
+				currentClass +
+				'"></span><span class="custom-separator">/</span><span class="' +
+				totalClass +
+				'"></span>'
+			);
+		},
 	},
 	navigation: {
 		nextEl: '.feedback__pagination-arrow.next',
