@@ -109,7 +109,7 @@
 			<div class="form__row">
 				<div class="form__input">
 					<input
-						class="input-comment"
+						class="input-comment input-required"
 						type="text"
 						placeholder="Комментарий" />
 					<span class="form__error text1">Обязательно к заполнению!</span>
@@ -174,6 +174,159 @@
 		</form>
 	</div>
 </div>
+
+<!-- данные для вакансии -->
+<div class="modal vacancie-modal">
+	<div class="modal__content">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</button>
+
+		<form class="form">
+			<div class="form__head">
+				<p class="form__title title3">Заполните поля</p>
+				<p class="form__subtitle text1">
+					Оставьте свои данные, и наш менеджер свяжется с вами в ближайшее время
+				</p>
+			</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="ФИО" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Пол" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Гражданство" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-tel"
+							type="number"
+							placeholder="Номер телефона" />
+						<span class="form__error text1">Неверный формат!</span>
+					</div>
+
+					<div class="form__input">
+						<input
+							class="input-email"
+							type="text"
+							placeholder="E-mail" />
+						<span class="form__error text1">Неверный формат!</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Желаемая профессия" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Комментарий" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__file">
+						<div class="form__file-btn">
+							<input type="file" />
+							<div class="form__file-title">
+								<span class="form__file-icon">
+									<img
+										src="./src/images/svg/file.svg"
+										alt="" />
+								</span>
+
+								<span class="text1">Прикрепить документ</span>
+							</div>
+						</div>
+						<div class="form__file-proccess">
+							<div class="form__file-proccess-box">
+								<div class="form__file-name">
+									<span class="form__file-name-icon">
+										<img
+											src="./src/images/svg/file-generic.svg"
+											alt="" />
+									</span>
+
+									<p class="form__file-name-text text1">filename.png</p>
+								</div>
+							</div>
+							<span class="form__file-close">
+								<img
+									src="./src/images/svg/close-btn.svg"
+									alt="" />
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<button class="request-btn request-btn--dark send-request-btn">
+					<div class="request-btn__box">
+						<span class="request-btn__text">Отправить анкету</span>
+					</div>
+					<span class="request-btn__icon">
+						<svg
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.6666 22L22 10.6667M22 10.6667V20M22 10.6667H12.6666"
+								stroke="#343333"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</span>
+				</button>
+			</form>
+	</div>
+</div>
+
 <!-- сертификаты -->
 <div class="modal certificate-modal">
 	<div class="modal__content modal__content--transparent">

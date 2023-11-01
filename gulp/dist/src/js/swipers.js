@@ -142,3 +142,27 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 		prevEl: '.feedback__pagination-arrow.prev',
 	},
 });
+
+const vacancySwiper = new Swiper('.vacancies-swiper', {
+	speed: 800,
+	grabCursor: true,
+	freeMode: true,
+	slidesPerView: 4,
+	spaceBetween: rem(2),
+	direction: 'vertical',
+	mousewheel: true,
+	scrollbar: {
+		el: '.swiper-scrollbar',
+	},
+});
+
+const vacancyContentSwiper = new Swiper('.vacancies-content-swiper', {
+	effect: 'fade',
+
+	slidesPerView: 1,
+	spaceBetween: rem(2),
+	allowTouchMove: false,
+	thumbs: {
+		swiper: vacancySwiper,
+	},
+});

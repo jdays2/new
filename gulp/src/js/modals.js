@@ -63,3 +63,10 @@ const contactUsModal = document.querySelector('.contact-us');
 if (leaveRequestBtns) {
 	setModal(leaveRequestBtns, contactUsModal);
 }
+
+const vacanciesRequestBtns = document.querySelectorAll('.vacancie-request');
+const vacanciesModal = document.querySelector('.vacancie-modal');
+
+if (vacanciesRequestBtns) {
+	setModal(vacanciesRequestBtns, vacanciesModal);
+}
