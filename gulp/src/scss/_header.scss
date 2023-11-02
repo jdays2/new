@@ -16,5 +16,24 @@
 		.container {
 			justify-content: space-between;
 		}
+
+		&--dark {
+			.burger__btn {
+				svg {
+					path {
+						stroke: $black;
+					}
+				}
+			}
+			.nav .request-btn .request-btn__icon {
+				background-color: $black;
+				svg {
+					path {
+						stroke: $black;
+						fill: #fff;
+					}
+				}
+			}
+		}
 	}
 }
