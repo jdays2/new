@@ -145,20 +145,29 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 
 const vacancySwiper = new Swiper('.vacancies-swiper', {
 	speed: 800,
-	grabCursor: true,
 	freeMode: true,
-	slidesPerView: 4,
 	spaceBetween: rem(2),
+	slidesPerView: 4,
 	direction: 'vertical',
+	observer: true,
+	updateOnWindowResize: true,
+	grabCursor: true,
 	mousewheel: true,
+
 	scrollbar: {
 		el: '.swiper-scrollbar',
+	},
+	on: {
+		resize: function () {
+			if (window.innerWidth < 768) {
+				vacancySwiper.destroy();
+			}
+		},
 	},
 });
 
 const vacancyContentSwiper = new Swiper('.vacancies-content-swiper', {
 	effect: 'fade',
-
 	slidesPerView: 1,
 	spaceBetween: rem(2),
 	allowTouchMove: false,
@@ -166,3 +175,4 @@ const vacancyContentSwiper = new Swiper('.vacancies-content-swiper', {
 		swiper: vacancySwiper,
 	},
 });
+

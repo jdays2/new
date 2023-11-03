@@ -70,3 +70,35 @@ const vacanciesModal = document.querySelector('.vacancie-modal');
 if (vacanciesRequestBtns) {
 	setModal(vacanciesRequestBtns, vacanciesModal);
 }
+
+//открытие модалки с вакансией на мобилке
+const vacanciesMobileBtns = document.querySelectorAll('.vacancies__item');
+const vacanciesMobileContent = document.querySelector(
+	'.vacancies__mob-content',
+);
+const vacanciesMobileCloseBtn = document.querySelector(
+	'.vacancies__mob-close-btn',
+);
+
+if (vacanciesRequestBtns) {
+	const activeClass = 'active';
+
+	vacanciesMobileBtns.forEach((btn) => {
+		btn.addEventListener('click', (e) => {
+			if (window.innerWidth < 768) {
+				e.preventDefault();
+				vacanciesMobileContent.classList.add(activeClass);
+				disableScroll()
+			}
+		});
+	});
+
+	//закрытие модалки с вакансией
+
+	if (vacanciesMobileCloseBtn) {
+		vacanciesMobileCloseBtn.addEventListener('click', () => {
+			enableScroll()
+			vacanciesMobileContent.classList.remove('active');
+		});
+	}
+}

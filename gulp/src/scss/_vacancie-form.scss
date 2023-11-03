@@ -7,8 +7,7 @@
 		gap: 8rem;
 		align-items: flex-start;
 		position: relative;
-    z-index: 2;
-
+		z-index: 2;
 	}
 
 	&__dark-block {
@@ -38,5 +37,26 @@
 		height: 100%;
 		-o-object-fit: cover;
 		object-fit: cover;
+	}
+
+	@media (max-width: 48em) {
+		&__box {
+			width: 100%;
+			
+		}
+		&__left-side {
+			display: none;
+		}
+
+
+		&__dark-block {
+			display: none;
+		}
+
+		&__right-side {
+			width: 100%;
+			margin: 0;
+			background-color: transparent;
+		}
 	}
 }
