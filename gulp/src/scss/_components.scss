@@ -211,6 +211,20 @@ $white: rgba(255, 255, 255, 1);
 		color: $white;
 	}
 
+	&--arrow {
+		.request-btn__icon {
+			background-color: $black;
+
+			svg {
+				path {
+					stroke: $white !important;
+					fill: $white !important;
+				}
+			}
+		}
+
+	}
+
 	&--dark {
 		.request-btn__box {
 			border-color: $black;
@@ -221,7 +235,8 @@ $white: rgba(255, 255, 255, 1);
 
 			svg {
 				path {
-					stroke: $white;
+					stroke: $black;
+					fill: $white;
 				}
 			}
 		}
@@ -427,7 +442,7 @@ $white: rgba(255, 255, 255, 1);
 		}
 
 		@media (max-width: 48em) {
-			margin-left: 3.2rem;
+			padding-left: 3.2rem;
 			margin-bottom: 6.4rem;
 			flex-direction: column;
 			align-items: flex-start;

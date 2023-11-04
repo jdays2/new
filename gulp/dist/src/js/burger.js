@@ -8,19 +8,26 @@ const enableScroll = () => {
 
 // показ буреп меню
 const burgerMenu = document.querySelector('.burger');
-const burgerBtn = document.querySelector('.burger__btn');
-const burgerCloseBtn = document.querySelector('.burger__close-btn');
+const burgerBtn = document.querySelectorAll('.burger__btn');
+const burgerCloseBtn = document.querySelectorAll('.burger__close-btn');
 
 if (burgerBtn && burgerMenu && burgerCloseBtn) {
 	const activeClass = 'active';
 
-	burgerBtn.addEventListener('click', () => {
-		burgerMenu.classList.add(activeClass);
-		disableScroll()
+	burgerBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			burgerMenu.classList.add(activeClass);
+			disableScroll();
+			console.log('hello btn')
+		});
 	});
+
 	//скрытие бурер меню
-	burgerCloseBtn.addEventListener('click', () => {
-		burgerMenu.classList.remove(activeClass);
-		enableScroll()
+	burgerCloseBtn.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			burgerMenu.classList.remove(activeClass);
+			enableScroll();
+			console.log('hello')
+		});
 	});
 }

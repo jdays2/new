@@ -52,7 +52,7 @@
 		flex-direction: column;
 		gap: 0;
 		transition: 0.4s;
-		opacity: 0 !important;
+		opacity: 1 !important;
 
 		&.active {
 			opacity: 1 !important;
@@ -246,6 +246,7 @@
 		}
 
 		&__marker {
+			opacity: 0 !important;
 			&-box {
 				padding: 0.8rem;
 				padding-right: 3.2rem;

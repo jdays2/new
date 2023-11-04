@@ -1,0 +1,91 @@
+.offices {
+	margin-top: 18.5rem;
+	&__box {
+		width: 100%;
+		@include border(top);
+		@include border(bottom);
+	}
+
+	&__list {
+		width: 160rem;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+
+		.map__baloon {
+			width: 53.3rem;
+			height: 31.5rem;
+			margin: 0;
+			background-color: #fff;
+
+			&-img {
+				width: 0rem;
+				margin-left: auto;
+				transition: 0.4s ease-out;
+			}
+			&:not(:last-child) {
+				@include border(right);
+			}
+
+			&:active {
+				background-color: $yellow;
+			}
+			@media (hover: hover) {
+				&:hover {
+					cursor: pointer;
+					background-color: $yellow;
+					.map__baloon-img {
+						width: 11.7rem;
+					}
+				}
+			}
+		}
+
+		.map__baloon-title {
+			text-transform: uppercase;
+		}
+	}
+	@media (max-width: 48em) {
+		margin-top: 10.8rem * 2;
+		&__list {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+
+			.map__baloon {
+				border: none;
+				display: flex;
+				width: 100%;
+				height: -webkit-fit-content;
+				height: -moz-fit-content;
+				height: fit-content;
+				&:not(:last-child) {
+					@include border(bottom);
+				}
+				&-img {
+					display: none;
+				}
+				&-content {
+					gap: 4rem;
+					padding: 3.3rem * 2 1.6rem * 2;
+				}
+				&-box {
+					width: 100%;
+					gap: 1.4rem * 2;
+				}
+
+				&-link {
+					gap: 3.2rem;
+				}
+
+				&-icon {
+					width: 4.4rem;
+					height: 4.4rem;
+					min-width: 4.4rem;
+					min-height: 4.4rem;
+				}
+			}
+		}
+	}
+}

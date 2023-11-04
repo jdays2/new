@@ -60,14 +60,14 @@ const initValidation = () => {
 		});
 	}
 
-	// // Валидация почты
-	// const inputEmail = document.querySelectorAll('.input-email');
-	// if (inputEmail.length > 0) {
-	// 	const regEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/gim;
-	// 	inputEmail.forEach((item) => {
-	// 		validateInput(item, regEmail);
-	// 	});
-	// }
+	// Валидация почты
+	const inputEmail = document.querySelectorAll('.input-email');
+	if (inputEmail.length > 0) {
+		const regEmail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/gim;
+		inputEmail.forEach((item) => {
+			validateInput(item, regEmail);
+		});
+	}
 
 	// Валидация телефонного номера
 	const inputPhone = document.querySelectorAll('.input-tel');
@@ -78,7 +78,16 @@ const initValidation = () => {
 			validateInput(item, regPhone);
 		});
 	}
+	const inputReq = document.querySelectorAll('.input-required');
+	if (inputReq.length > 0) {
+		const regReq = /\S+/;
+		inputReq.forEach((item) => {
+			validateInput(item, regReq);
+		});
+	}
 };
+
+//Валидация просто пустой формы
 
 // Вызов функции для инициализации валидации
 document.addEventListener('DOMContentLoaded', initValidation);

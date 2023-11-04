@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="./src/fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="./src/css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script
+			src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=cb93da52-9741-4ffe-86ea-93a91ce99a1c"
+			type="text/javascript"></script>
+		<title>ESK | Услуги детальная</title>
+	</head>
+	<body>
+		<header class="header header--dark">
+	<div class="container">
+		<button class="burger__btn">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="44"
+				height="44"
+				viewBox="0 0 44 44"
+				fill="none">
+				<path
+					d="M6.875 22H37.125"
+					stroke="#343333"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+				<path
+					d="M6.875 11H37.125"
+					stroke="#343333"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+				<path
+					d="M6.875 33H37.125"
+					stroke="#343333"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round" />
+			</svg>
+		</button>
+
+		<a
+			class="logo"
+			href="./main.html">
+			<img
+				src="./src/images/svg/logo.svg"
+				alt="" />
+		</a>
+
+		<div class="nav nav--dark">
+			<nav class="nav__links">
+				<a
+					href="./service.html"
+					class="nav__links-item text1">
+					Услуги
+				</a>
+				<a
+					href="./about.html"
+					class="nav__links-item text1">
+					О компании
+				</a>
+				<a
+					href="./vacancies.html"
+					class="nav__links-item text1">
+					Вакансии
+				</a>
+				<a
+					href="./contacts.html"
+					class="nav__links-item text1">
+					Контакты
+				</a>
+			</nav>
+
+			<a
+				href="mailto:info@esccom.ru"
+				class="nav__links-item text1 nav__links-item--email">
+				info@esccom.ru
+			</a>
+
+			<button
+				class="request-btn request-btn--dark request-btn--arrow leave-request">
+				<div class="request-btn__box">
+					<span class="request-btn__text">Оставить заявку</span>
+				</div>
+				<span class="request-btn__icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="22"
+						height="22"
+						viewBox="0 0 22 22"
+						fill="none">
+						<path
+							d="M7.3335 15.1249L15.1252 7.33325M15.1252 7.33325V13.7499M15.1252 7.33325H8.7085"
+							stroke="white"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</span>
+			</button>
+		</div>
+	</div>
+</header>
+<div class="burger">
+	<div class="burger__box">
+		<div class="burger__close-btn">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</div>
+
+		<a
+			class="logo"
+			href="./">
+			<img
+				src="./src/images/svg/logo.svg"
+				alt="" />
+		</a>
+
+		<nav class="burger__nav">
+			<a
+				class="burger__nav-item title3"
+				href="./service.html">
+				услуги
+			</a>
+
+			<a
+				class="burger__nav-item title3"
+				href="./vacancies.html">
+				вакансии
+			</a>
+			<a
+				class="burger__nav-item title3"
+				href="./contacts.html">
+				контакты
+			</a>
+			<a
+				class="burger__nav-item title3"
+				href="./about.html">
+				о компании
+			</a>
+			<a
+				class="burger__nav-item burger__nav-item--email text3"
+				href="mailto:info@esccom.ru">
+				info@esccom.ru
+			</a>
+			<a
+				class="burger__nav-item title3"
+				href="tel:+7(821)4960014">
+				+ 7 (821) 496 00-14
+			</a>
+		</nav>
+		<button
+			class="request-btn request-btn--dark request-btn--arrow leave-request">
+			<div class="request-btn__box">
+				<span class="request-btn__text">Оставить заявку</span>
+			</div>
+			<span class="request-btn__icon">
+				<svg
+					width="32"
+					height="32"
+					viewBox="0 0 32 32"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M10.6666 22L22 10.6667M22 10.6667V20M22 10.6667H12.6666"
+						stroke="#343333"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round" />
+				</svg>
+			</span>
+		</button>
+	</div>
+</div>
+
+
+		<section class="section">
+			<div class="container container--max service-det">
+				<div class="service-det__head">
+					<div class="service-det__title text5">
+						Обслуживание удаленных объектов
+					</div>
+				</div>
+				<div class="service-det__box">
+					<div class="service-det__img-side">
+						<img
+							src="./src/images/webp/services-1.webp"
+							alt="" />
+					</div>
+
+					<div class="service-det__content-side">
+						<p class="service-det__content-title text3">
+							Обслуживание и содержание удаленных объектов (вахтовых
+							поселков)включает в себя следующий состав услуг:
+						</p>
+						<ul class="service-det__content-list">
+							<li class="service-det__content-item text1">
+								уборка и санитарная обработка жилых помещений, зданий и офисов;
+							</li>
+							<li class="service-det__content-item text1">
+								организация общественного питания;
+							</li>
+							<li class="service-det__content-item text1">
+								замена и стирка постельных принадлежностей;
+							</li>
+							<li class="service-det__content-item text1">
+								профессиональная стирка спецодежды;
+							</li>
+							<li class="service-det__content-item text1">
+								выдача санитарно-гигиенических, моющих средств;
+							</li>
+
+							<li class="service-det__content-item text1">уборка снега;</li>
+
+							<li class="service-det__content-item text1">
+								вывоз мусора и прочих отходов.
+							</li>
+						</ul>
+
+						<button class="request-btn request-btn--dark leave-request">
+							<div class="request-btn__box">
+								<span class="request-btn__text">Оставить заявку</span>
+							</div>
+							<span class="request-btn__icon">
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<g id="Icons">
+										<path
+											id="Vector"
+											d="M3.01075 16.4138C3.17792 17.6841 3.80179 18.8501 4.76584 19.6941C5.7299 20.5381 6.96821 21.0023 8.2495 21C15.6933 21 21.7495 14.9438 21.7495 7.5C21.7518 6.21871 21.2876 4.9804 20.4436 4.01634C19.5996 3.05228 18.4336 2.42841 17.1633 2.26125C16.842 2.22203 16.5167 2.28775 16.2359 2.4486C15.9551 2.60945 15.7338 2.85681 15.6051 3.15375L13.6251 7.57406V7.58531C13.5266 7.81261 13.4859 8.06078 13.5067 8.30764C13.5275 8.55449 13.6091 8.79237 13.7442 9C13.7611 9.02531 13.7789 9.04875 13.7976 9.07219L15.7495 11.3859C15.0473 12.8128 13.5548 14.2922 12.1092 14.9963L9.82732 13.0547C9.80491 13.0359 9.78143 13.0183 9.757 13.0022C9.54954 12.8638 9.31085 12.7794 9.06253 12.7564C8.81421 12.7335 8.5641 12.7729 8.33482 12.8709L8.32263 12.8766L3.90606 14.8556C3.6086 14.9838 3.36064 15.2049 3.19925 15.4858C3.03787 15.7666 2.97174 16.0922 3.01075 16.4138Z"
+											fill="#343333" />
+									</g>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+	<div class="container container--max benefits">
+		<div class="section__head">
+			<p class="section__head-title text5">преимущества</p>
+			<p class="section__head-discription text1">
+				ЕСК – всероссийская компания, специализирующаяся на аутсорсинге
+				промышленно-хозяйственных функций для крупных предприятий
+			</p>
+		</div>
+
+		<div class="benefits__box">
+			<nav class="benefits__list">
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/quality.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">
+							Большой опыт работы на удаленных объектах
+						</p>
+					</div>
+
+					<div class="benefits__item-content text1">
+						Имеем большой опыт обслуживания объектов в отдаленных регионах со
+						сложным рельефом и суровыми климатическими условиями
+					</div>
+				</div>
+
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/shield.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Система контроля качества</p>
+					</div>
+
+					<div class="benefits__item-content text1">
+						Уделяем особое внимание технике безопасности, охране труда,
+						соблюдаем стандарты ХАССП
+					</div>
+				</div>
+
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/calc.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Автоматизированный учет</p>
+					</div>
+
+					<div class="benefits__item-content text1">
+						Повышаем эффективность и точность учета питающихся и проживающих с
+						автоматизированной системой
+					</div>
+				</div>
+
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/time.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Быстрый запуск проекта</p>
+					</div>
+
+					<div class="benefits__item-content text1">
+						Быстрые сроки запуска услуг на объекте: гарантированная
+						эффективность и безотказная работа
+					</div>
+				</div>
+
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/hand-heart.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Индивидуальный подход</p>
+					</div>
+
+					<div class="benefits__item-content text1">
+						Разрабатываем уникальные решения, учитывая все особенности и
+						пожелания каждого конкретного клиента
+					</div>
+				</div>
+
+				<div class="benefits__item">
+					<div class="benefits__item-head">
+						<span class="benefits__item-icon">
+							<img
+								src="./src/images/svg/rate.svg"
+								alt="" />
+						</span>
+						<p class="benefits__item-title text3">Единый подрядчик</p>
+					</div>
+
+					<div class="benefits__item-content text1">
+						Разрабатываем уникальные решения, учитывая все особенности и
+						пожелания каждого конкретного клиента
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+</section>
+
+
+		<section class="section">
+			<div class="container container--max about-service">
+				<div class="about-service__box">
+					<div class="about-service__img-side">
+						<img
+							src="./src/images/webp/about-service.webp"
+							alt="" />
+					</div>
+					<div class="about-service__content-side">
+						<div class="about-service__content-box">
+							<p class="about-service__content-title title2">Об услуге</p>
+							<div class="about-service__content-text">
+								<p class="text1">
+									Мы готовы адаптироваться к вашим потребностям и разработать
+									индивидуальное решение, которое наилучшим образом
+									соответствует вашим требованиям. Наша цель - обеспечить вам
+									максимальный комфорт и спокойствие, зная, что ваши удаленные
+									объекты находятся под надежной защитой и техническим
+									обслуживанием.
+								</p>
+								<p class="text1">
+									Если вам нужны надежные и профессиональные услуги по
+									обслуживанию удаленных объектов, обратитесь к нам. Мы готовы
+									помочь вам обеспечить бесперебойную работу и эффективное
+									функционирование ваших удаленных систем. Понимая, что
+									удаленные объекты требуют особого внимания и надежного
+									подхода, наша компания специализируется на обеспечении
+									надежного обслуживания таких объектов. Мы осознаем, что для
+									успешного функционирования удаленных систем необходимо
+									оперативное и качественное обслуживание, поэтому наша команда
+									готова предложить вам полный спектр услуг.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+  <div class="container container--max contacts">
+    <div class="section__head">
+      <p class="section__head-title text5">Контакты</p>
+      <a
+        class="link-btn"
+        href="./contacts.html">
+        <span class="link-btn__text">Подробнее</span>
+        <div class="link-btn__icon">
+          <img
+            src="src/images/svg/arrow-top.svg"
+            alt="" />
+        </div>
+      </a>
+    </div>
+
+    <div class="contacts__box">
+      <div class="contacts__left-side">
+        <div
+          class="map"
+          id="map"></div>
+      </div>
+      <div class="contacts__right-side">
+        <form class="form">
+          <div class="form__head">
+            <p class="form__title title3">Связаться с нами</p>
+            <p class="form__subtitle text1">
+              Оставьте свои данные, и наш менеджер свяжется с вами в
+              ближайшее время
+            </p>
+          </div>
+          <div class="form__row">
+            <div class="form__input">
+              <input
+                class="input-name"
+                type="text"
+                placeholder="Ваше имя" />
+              <span class="form__error text1">
+                Обязательно к заполнению!
+              </span>
+            </div>
+
+            <div class="form__input">
+              <input
+                class="input-tel"
+                type="number"
+                placeholder="Номер телефона" />
+              <span class="form__error text1">Неверный формат!</span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__input">
+              <input
+                class="input-comment input-required"
+                type="text"
+                placeholder="Комментарий" />
+              <span class="form__error text1">
+                Обязательно к заполнению!
+              </span>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__file">
+              <div class="form__file-btn">
+                <input type="file" />
+                <div class="form__file-title">
+                  <span class="form__file-icon">
+                    <img
+                      src="./src/images/svg/file.svg"
+                      alt="" />
+                  </span>
+
+                  <span class="text1">Прикрепить документ</span>
+                </div>
+              </div>
+              <div class="form__file-proccess">
+                <div class="form__file-proccess-box">
+                  <div class="form__file-name">
+                    <span class="form__file-name-icon">
+                      <img
+                        src="./src/images/svg/file-generic.svg"
+                        alt="" />
+                    </span>
+
+                    <p class="form__file-name-text text1">filename.png</p>
+                  </div>
+                </div>
+                <span class="form__file-close">
+                  <img
+                    src="./src/images/svg/close-btn.svg"
+                    alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <button class="request-btn request-btn--dark request-btn--arrow send-request-btn">
+            <div class="request-btn__box">
+              <span class="request-btn__text">Отправить заявку</span>
+            </div>
+            <span class="request-btn__icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.6666 22L22 10.6667M22 10.6667V20M22 10.6667H12.6666"
+                  stroke="#343333"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+	</body>
+	<footer class="footer">
+	<div class="container">
+		<a
+			class="logo"
+			href="#">
+			<img
+				src="./src/images/svg/logo.svg"
+				alt="" />
+		</a>
+
+		<div class="nav nav--dark">
+			<nav class="nav__links">
+				<a
+					href=""
+					class="nav__links-item text1">
+					Услуги
+				</a>
+				<a
+					href=""
+					class="nav__links-item text1">
+					О компании
+				</a>
+				
+				<a
+					href=""
+					class="nav__links-item text1">
+					Вакансии
+				</a>
+				<a
+					href=""
+					class="nav__links-item text1">
+					Контакты
+				</a>
+			</nav>
+
+			<a
+				href="mailto:info@esccom.ru"
+				class="nav__links-item text1 nav__links-item--email">
+				info@esccom.ru
+			</a>
+
+			<a
+				href="tel:+7(821)4960014"
+				class="nav__links-item text1 nav__links-item--tel">
+				+ 7 (821) 496 00-14
+			</a>
+		</div>
+	</div>
+	<div class="container container--max">
+		<div class="footer__wrapper">
+			<div class="footer__info-box">
+				<p class="text4">© 2016-2023 Права защищены</p>
+				<a
+					href="#"
+					class="footer__info-box-right text4">
+					Положение об обработке и защите персональных данных сотрудников
+				</a>
+				<a
+					href="#"
+					class="footer__developers">
+					<span class="footer__developers-icon">
+						<img
+							src="./src/images/svg/request-dev.svg"
+							alt="" />
+					</span>
+					<p class="text4">Разработано Request Design</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<!-- связаться с нами -->
+<div class="modal contact-us">
+	<div class="modal__content">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</button>
+
+		<form class="form">
+			<div class="form__head">
+				<p class="form__title title3">Связаться с нами</p>
+				<p class="form__subtitle text1">
+					Оставьте свои данные, и наш менеджер свяжется с вами в ближайшее время
+				</p>
+			</div>
+			<div class="form__row">
+				<div class="form__input">
+					<input
+						class="input-name"
+						type="text"
+						placeholder="Ваше имя" />
+					<span class="form__error text1">Обязательно к заполнению!</span>
+				</div>
+
+				<div class="form__input">
+					<input
+						class="input-tel"
+						type="number"
+						placeholder="Номер телефона" />
+					<span class="form__error text1">Неверный формат!</span>
+				</div>
+			</div>
+
+			<div class="form__row">
+				<div class="form__input">
+					<input
+						class="input-comment input-required"
+						type="text"
+						placeholder="Комментарий" />
+					<span class="form__error text1">Обязательно к заполнению!</span>
+				</div>
+			</div>
+
+			<div class="form__row">
+				<div class="form__file">
+					<div class="form__file-btn">
+						<input type="file" />
+						<div class="form__file-title">
+							<span class="form__file-icon">
+								<img
+									src="./src/images/svg/file.svg"
+									alt="" />
+							</span>
+
+							<span class="text1">Прикрепить резюме</span>
+						</div>
+					</div>
+					<div class="form__file-proccess">
+						<div class="form__file-proccess-box">
+							<div class="form__file-name">
+								<span class="form__file-name-icon">
+									<img
+										src="./src/images/svg/file-generic.svg"
+										alt="" />
+								</span>
+
+								<p class="form__file-name-text text1">filename.png</p>
+							</div>
+						</div>
+						<span class="form__file-close">
+							<img
+								src="./src/images/svg/close-btn.svg"
+								alt="" />
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<button class="request-btn request-btn--dark request-btn--arrow send-request-btn">
+				<div class="request-btn__box">
+					<span class="request-btn__text">Отправить заявку</span>
+				</div>
+				<span class="request-btn__icon">
+					<svg
+						width="32"
+						height="32"
+						viewBox="0 0 32 32"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M10.6666 22L22 10.6667M22 10.6667V20M22 10.6667H12.6666"
+							stroke="#343333"
+							stroke-width="1.5"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</span>
+			</button>
+		</form>
+	</div>
+</div>
+
+<!-- данные для вакансии -->
+<div class="modal vacancie-modal">
+	<div class="modal__content">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</button>
+
+		<form class="form">
+			<div class="form__head">
+				<p class="form__title title3">Заполните поля</p>
+				<p class="form__subtitle text1">
+					Оставьте свои данные, и наш менеджер свяжется с вами в ближайшее время
+				</p>
+			</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="ФИО" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Пол" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Гражданство" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-tel"
+							type="number"
+							placeholder="Номер телефона" />
+						<span class="form__error text1">Неверный формат!</span>
+					</div>
+
+					<div class="form__input">
+						<input
+							class="input-email"
+							type="text"
+							placeholder="E-mail" />
+						<span class="form__error text1">Неверный формат!</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Желаемая профессия" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__input">
+						<input
+							class="input-required"
+							type="text"
+							placeholder="Комментарий" />
+						<span class="form__error text1">
+							Обязательно к заполнению!
+						</span>
+					</div>
+				</div>
+
+				<div class="form__row">
+					<div class="form__file">
+						<div class="form__file-btn">
+							<input type="file" />
+							<div class="form__file-title">
+								<span class="form__file-icon">
+									<img
+										src="./src/images/svg/file.svg"
+										alt="" />
+								</span>
+
+								<span class="text1">Прикрепить документ</span>
+							</div>
+						</div>
+						<div class="form__file-proccess">
+							<div class="form__file-proccess-box">
+								<div class="form__file-name">
+									<span class="form__file-name-icon">
+										<img
+											src="./src/images/svg/file-generic.svg"
+											alt="" />
+									</span>
+
+									<p class="form__file-name-text text1">filename.png</p>
+								</div>
+							</div>
+							<span class="form__file-close">
+								<img
+									src="./src/images/svg/close-btn.svg"
+									alt="" />
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<button class="request-btn request-btn--dark request-btn--arrow send-request-btn">
+					<div class="request-btn__box">
+						<span class="request-btn__text">Отправить анкету</span>
+					</div>
+					<span class="request-btn__icon">
+						<svg
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M10.6666 22L22 10.6667M22 10.6667V20M22 10.6667H12.6666"
+								stroke="#343333"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+					</span>
+				</button>
+			</form>
+	</div>
+</div>
+
+<!-- сертификаты -->
+<div class="modal certificate-modal">
+	<div class="modal__content modal__content--transparent">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn-light.svg"
+				alt="" />
+		</button>
+
+		<div class="certificate-modal__box">
+			<div class="certificate-modal-swiper swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+				</div>
+			</div>
+
+			<div class="certificate-modal-swiper-thumbs swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+					<div class="swiper-slide certificate-modal-swiper__card">
+						<img
+							src="./src/images/webp/certificate-modal.webp"
+							alt="" />
+					</div>
+				</div>
+			</div>
+
+			<div class="certificate-modal__arrows">
+				<div class="certificate-modal-swiper__arrow prev">
+					<img
+						src="./src/images/svg/light-arrow.svg"
+						alt="" />
+				</div>
+				<div class="certificate-modal-swiper__arrow next">
+					<img
+						src="./src/images/svg/light-arrow.svg"
+						alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- отзыв(файл подробнее) -->
+<div class="modal feedback-image">
+	<div class="modal__content modal__content--transparent">
+		<div class="feedback-image__box">
+			<div class="feedback-image__img">
+				<button class="modal__close">
+					<img
+						src="./src/images/svg/close-btn-light.svg"
+						alt="" />
+				</button>
+				<img
+					src="./src/images/webp/feedback.webp"
+					alt="" />
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- подробная информация об адресe на карте, baloon -->
+<div class="modal map-modal-baloon">
+	<div class="modal__content">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</button>
+
+		<div class="map__baloon">
+			<div class="map__baloon-content">
+				<p class="map__baloon-title text3">Центральный офис</p>
+				<div class="map__baloon-box">
+					<a
+						class="map__baloon-link"
+						href="tel:+7(821)4960014">
+						<div class="map__baloon-icon">
+							<img
+								src="./src/images/svg/tel.svg"
+								alt="" />
+						</div>
+						<span class="text2">+ 7 (821) 496 00-14</span>
+					</a>
+					<a
+						class="map__baloon-link"
+						href="mailto:info@esccom.ru">
+						<div class="map__baloon-icon">
+							<img
+								src="./src/images/svg/mail.svg"
+								alt="" />
+						</div>
+						<span class="text2">info@esccom.ru</span>
+					</a>
+					<a
+						class="map__baloon-link"
+						href="#">
+						<div class="map__baloon-icon">
+							<img
+								src="./src/images/svg/geo.svg"
+								alt="" />
+						</div>
+						<p class="text2">
+							123610, г. Москва, Краснопресненская набережная, дом 12, офис 1903
+						</p>
+					</a>
+				</div>
+			</div>
+			<div class="map__baloon-img">
+				<img
+					src="./src/images/webp/baloon.webp"
+					alt="" />
+			</div>
+				</div>
+	</div>
+</div>
+
+<!-- ваша заявка отправлена -->
+<div class="modal request-sended">
+	<div class="modal__content">
+		<button class="modal__close">
+			<img
+				src="./src/images/svg/close-btn.svg"
+				alt="" />
+		</button>
+		<p class="modal__title title2">ваша заявка отправлена!</p>
+		<a
+			class="link-btn"
+			href="#">
+			<span class="link-btn__text">Продолжить</span>
+			<div class="link-btn__icon">
+				<img
+					src="src/images/svg/arrow-top.svg"
+					alt="" />
+			</div>
+		</a>
+	</div>
+</div>
+
+<script src="./src/js/burger.js"></script>
+<script src="./src/js/select-tab.js"></script>
+<script src="./src/js/swipers.js"></script>
+<script src="./src/js/modals.js"></script>
+<script src="./src/js/form.js"></script>
+<script src="./src/js/yandex-map.js"></script>
+
+</html>
