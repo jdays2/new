@@ -85,10 +85,31 @@ ymaps.ready(function () {
 			const baloonModal = document.querySelector('.map-modal-baloon');
 			const activeClass = 'active';
 
-			const width = window.innerWidth < 768;
+			const width = window.innerWidth <= 768;
 			if (width) {
 				baloonModal.classList.add(activeClass);
 			}
+		});
+
+		placemark.events.add('mouseenter', function (e) {
+			const width = window.innerWidth >= 768;
+			if (width) {
+				map.balloon.open(
+					[55.754203, 37.556388],
+					{
+						contentHeader: 'Заголовок вашего кастомного балуна',
+						contentBody: 'Содержимое вашего кастомного балуна',
+					},
+					{
+						layout: customBalloonLayout,
+					},
+				);
+			}
+		});
+
+		// Добавляем обработчик события "mouseleave" для маркера
+		placemark.events.add('mouseleave', function (e) {
+			map.balloon.close();
 		});
 	}
 });
