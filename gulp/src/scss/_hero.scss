@@ -15,6 +15,10 @@
 		z-index: 1;
 	}
 
+	&__wrapper {
+
+	}
+
 	&__img {
 		height: 18.3rem;
 		width: 64.8rem;
@@ -167,8 +171,7 @@
 						180deg,
 						rgba(0, 0, 0, 0.2) 14.26%,
 						rgba(0, 0, 0, 0) 24.38%
-					),
-					
+					);
 			}
 
 			img {

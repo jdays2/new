@@ -1,5 +1,7 @@
 .services {
-	@include border(bottom);
+	.container--medium {
+		@include border(bottom);
+	}
 	&__tabs {
 		width: 100%;
 		margin-bottom: 5.7rem;
@@ -41,6 +43,7 @@
 		padding-bottom: 4rem;
 		padding-left: 4.1rem;
 		padding-right: 6.4rem;
+		
 	}
 
 	&__info-elem {
