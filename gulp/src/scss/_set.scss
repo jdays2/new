@@ -105,10 +105,29 @@ ul li {
 
 .container {
 	width: 160rem;
+	max-width: 1920px;
 	margin: 0 auto;
+	position: relative;
+	@media (max-width: 48em) {
+		width: 100%;
+		padding:0 !important;
+	}
+	&--medium {
+		width: 192rem;
+		max-width: 1920px;
+		margin: 0 auto;
+		position: relative;
+		@media (max-width: 48em) {
+			width: 100%;
+			padding:0 !important;
+		}
+	}
 	&--max {
 		width:100%;
+		max-width: 100%;
+		margin: 0 auto;
 		@media (max-width: 48em) {
+			
 			padding:0 !important;
 		}
 	}

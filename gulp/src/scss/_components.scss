@@ -11,6 +11,12 @@ $white: rgba(255, 255, 255, 1);
 	text-wrap: nowrap;
 }
 
+@mixin wrapper {
+	display: flex;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
 @mixin white-bg-yellow {
 	background-color: $white;
 
@@ -143,7 +149,8 @@ $white: rgba(255, 255, 255, 1);
 	&__icon {
 		width: 2.4rem;
 		height: 2.4rem;
-		svg, img {
+		svg,
+		img {
 			width: 100%;
 			height: 100%;
 			-o-object-fit: contain;
@@ -222,7 +229,6 @@ $white: rgba(255, 255, 255, 1);
 				}
 			}
 		}
-
 	}
 
 	&--dark {

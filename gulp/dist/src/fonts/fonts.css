@@ -15,6 +15,14 @@
 }
 
 @font-face {
+	font-family: 'Akzidenz';
+	font-style: normal;
+	font-weight: 300;
+	src: url('./akzidenzgroteskpro_lightex.ttf') format('truetype');
+}
+
+
+@font-face {
 	font-family: 'Gilroy';
 	src: url('./Gilroy-Light.woff') format('woff'),
 		url('./Gilroy-Light.ttf') format('truetype');

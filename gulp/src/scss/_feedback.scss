@@ -108,13 +108,10 @@
 
 		&__swiper {
 			width: 100%;
-			border: 2px solid blue;
 			height: auto !important;
-
 		}
 		&__item {
 			flex-direction: column;
-			border: 1px solid green;
 			gap: 0;
 			height: 100%;
 
@@ -138,6 +135,10 @@
 				height: 100%;
 				padding: 4rem;
 
+				br {
+					display: none;
+				}
+
 				&-logo {
 					height: 3.8rem * 2;
 				}
@@ -148,8 +149,16 @@
 				&-text {
 					gap: 0;
 					width: 100%;
-					height: 24.6rem*2;
-					
+					height: 90rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.text1 {
+						height: -webkit-fit-content;
+						height: -moz-fit-content;
+						height: fit-content;
+					}
 				}
 			}
 		}
