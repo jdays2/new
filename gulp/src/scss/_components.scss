@@ -45,6 +45,12 @@ $white: rgba(255, 255, 255, 1);
 	}
 }
 
+.swiper-wrapper {
+	height: -webkit-fit-content !important;
+	height: -moz-fit-content !important;
+	height: fit-content !important;
+}
+
 .increase-btn {
 	@include white-bg-yellow;
 	display: flex;
