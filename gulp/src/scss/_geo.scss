@@ -51,15 +51,17 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0;
-		transition: 0.4s;
-		opacity: 1 !important;
+		transition: 0.1s;
+		transform: translateY(2rem);
+		opacity: 0 !important;
 
 		&.active {
 			opacity: 1 !important;
+			transform: translateY(0rem);
 		}
 
 		&.moscow {
-			top: 40.5rem;
+			top: 45rem;
 			left: 23rem;
 
 			.geo__arrow {
@@ -70,7 +72,7 @@
 			}
 		}
 		&.moscow-obl {
-			top: 26.8rem;
+			top: 28.8rem;
 			left: 10.6rem;
 			width: -webkit-fit-content;
 			width: -moz-fit-content;
@@ -96,7 +98,7 @@
 			}
 		}
 		&.nenec {
-			top: 24.2rem;
+			top: 26.2rem;
 			left: 64.1rem;
 
 			.geo__arrow {
@@ -108,7 +110,7 @@
 			}
 		}
 		&.komi {
-			top: 41.5rem;
+			top: 47.5rem;
 			left: 45.3rem;
 
 			.geo__arrow {
@@ -121,7 +123,7 @@
 		}
 		&.krasn {
 			top: 38.6rem;
-			left: 91.5rem;
+			left: 98.5rem;
 			display: flex;
 			flex-direction: row;
 			align-items: center;
@@ -134,8 +136,8 @@
 			}
 		}
 		&.irkutsk {
-			left: 101.6rem;
-			top: 57.6rem;
+			left: 102.6rem;
+			top: 64.6rem;
 
 			display: flex;
 			flex-direction: row;
@@ -175,25 +177,27 @@
 			cursor: pointer;
 			z-index: 10;
 			position: relative;
+			stroke: $black;
+			fill: $yellow;
+			transition: 0.4s;
+			opacity: 0.75;
 			&.active {
-				stroke: $yellow;
+				opacity: 1;
+			}
+			path {
+				stroke: $black;
 				fill: $yellow;
 				transition: 0.4s;
-				path {
-					stroke: $yellow;
-					fill: $yellow;
-					transition: 0.4s;
-				}
-				mask {
-					stroke: $yellow;
-					fill: $yellow;
-					transition: 0.4s;
+			}
+			mask {
+				stroke: $black;
+				fill: $yellow;
+				transition: 0.4s;
 
-					path {
-						stroke: $yellow;
-						transition: 0.4s;
-						fill: $yellow;
-					}
+				path {
+					stroke: $black;
+					transition: 0.4s;
+					fill: $yellow;
 				}
 			}
 		}

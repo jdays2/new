@@ -146,16 +146,17 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 const vacancySwiper = new Swiper('.vacancies-swiper', {
 	speed: 800,
 	freeMode: true,
+	
 	spaceBetween: rem(2),
 	slidesPerView: 4,
 	direction: 'vertical',
 	observer: true,
 	updateOnWindowResize: true,
-	grabCursor: true,
 	mousewheel: true,
 
 	scrollbar: {
 		el: '.swiper-scrollbar',
+		draggable: true,
 	},
 	on: {
 		resize: function () {
@@ -175,4 +176,3 @@ const vacancyContentSwiper = new Swiper('.vacancies-content-swiper', {
 		swiper: vacancySwiper,
 	},
 });
-

@@ -16,7 +16,6 @@
 	}
 
 	&__wrapper {
-
 	}
 
 	&__img {
@@ -106,6 +105,8 @@
 		p {
 			display: inline;
 			color: $white;
+			-webkit-text-stroke: 1px #343333;
+			text-stroke: 1px #343333;
 		}
 	}
 
