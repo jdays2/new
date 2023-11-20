@@ -76,7 +76,7 @@ const certificateModalSwiperMain = new Swiper('.certificate-modal-swiper', {
 });
 
 const swiperPartners = new Swiper('.swiper-partners', {
-	speed: 10000, //задаем скорость движения нашей бегущей строки
+	speed: 5000, //задаем скорость движения нашей бегущей строки
 	spaceBetween: rem(6.4), // задаем отступы
 	loop: true, //зацикливаем, что бы движание было бесконечным
 	allowTouchMove: false, // можно ещё отключить свайп
