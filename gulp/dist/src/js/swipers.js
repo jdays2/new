@@ -99,7 +99,7 @@ const swiperPartners = new Swiper('.swiper-partners', {
 });
 
 const swiperPartners2 = new Swiper('.swiper-partners2', {
-	speed: 10000,
+	speed: 5000,
 	spaceBetween: rem(6.4),
 	loop: true,
 	allowTouchMove: false,
